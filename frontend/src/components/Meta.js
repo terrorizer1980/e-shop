@@ -12,9 +12,9 @@ const Meta = ({ title, description, keywords }) => {
 }
 
 Meta.defaultProps = {
-  title: 'Welcome To EUC-Shop',
-  description: 'We sell the best electric unicycles',
+  title: 'Welcome To EV-Wheels',
+  description: 'We sell the best personal light electric vehicles',
   keywords:
-    'euc, electric unicycle, buy electric unicycles, cheap electric unicycles',
+    'euc, electric unicycle, buy electric bicycles, cheap electric scooters',
 }
 export default Meta
