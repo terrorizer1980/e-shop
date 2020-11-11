@@ -89,7 +89,7 @@ const products = [
     description:
       'One of the fastest bike. The RipCurrent S delivers fully-loaded fat-tire fun, safety and versatility. This beast of an e-bike features a massive 52V 19.2Ah battery, 750W motor and loads of super functional upgrades',
     brand: 'Juiced Bikes',
-    category: 'Electric Fat Bike',
+    category: 'Electric Bike',
     price: 2299.99,
     countInStock: 10,
     rating: 0,

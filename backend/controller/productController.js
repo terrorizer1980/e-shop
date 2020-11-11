@@ -146,7 +146,16 @@ const createProductReview = asyncHandler(async (req, res) => {
 //@route GET /api/products/top
 //@access public
 const getTopProducts = asyncHandler(async (req, res) => {
-  const products = await Product.find({}).sort({ rating: -1 }).limit(3)
+  // const products = await Product.find({}).sort({ rating: -1 }).limit(3)
+  const euc = await Product.find({ category: 'Euc' })
+    .sort({ rating: -1 })
+    .limit(2)
+  const skateboards = await Product.find({
+    category: 'Electric Skateboard',
+  }).limit(2)
+  const scooter = await Product.find({ category: 'Electric Scooter' }).limit(1)
+  const bike = await Product.find({ category: 'Electric Bike' }).limit(1)
+  const products = [...euc, ...skateboards, ...scooter, ...bike]
 
   res.json(products)
 })
