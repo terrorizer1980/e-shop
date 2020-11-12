@@ -19,7 +19,16 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>EV-Wheels</Navbar.Brand>
+            <Navbar.Brand>
+              <img
+                alt=''
+                src='./logo.svg'
+                width='30'
+                height='30'
+                className='d-inline-block align-top'
+              />{' '}
+              EV-Wheels
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>

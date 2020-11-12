@@ -8,6 +8,7 @@ import Product from '../components/Product'
 import Paginate from '../components/Paginate'
 import { listProducts } from '../actions/productActions'
 import ProductCarousel from '../components/ProductCarousel'
+import Jumbotron from '../components/Jumbo'
 import Meta from '../components/Meta'
 
 const HomeScreen = ({ match }) => {
@@ -27,6 +28,7 @@ const HomeScreen = ({ match }) => {
   return (
     <>
       <Meta />
+      <Jumbotron />
       {!keyword ? (
         <ProductCarousel />
       ) : (

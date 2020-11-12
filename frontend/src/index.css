@@ -42,3 +42,13 @@ h2 {
 .carousel a {
   margin: 0 auto;
 }
+
+.jumbo-bg {
+  background-image: url('https://media.giphy.com/media/U0bfNMZtmFLzi/giphy.gif');
+  /* url('https://media.giphy.com/media/U4Go7iP5vb8NstoCjv/giphy.gif'),
+    url('https://media.giphy.com/media/WqRft6rPLzosZZbk7V/giphy.gif'); */
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
