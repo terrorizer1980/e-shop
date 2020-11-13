@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import AboutUsModal from './AboutUsModal'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 // import { withRouter } from 'react-router-dom'
 const Jumbo = () => {
@@ -25,6 +25,7 @@ const Jumbo = () => {
           <h4 className='jumbo-h4 '>
             Find the best personal transport devices on the Web!
           </h4>
+          <AboutUsModal />
         </div>
       </Jumbotron>
     </>

@@ -76,6 +76,7 @@ const ProductScreen = ({ history, match }) => {
               <ListGroup variant='flush'>
                 <ListGroup.Item>
                   <h3>{product.name}</h3>
+                  <ListGroup.Item> Category: {product.category}</ListGroup.Item>
                 </ListGroup.Item>
 
                 <ListGroup.Item>
@@ -147,7 +148,7 @@ const ProductScreen = ({ history, match }) => {
             </Col>
           </Row>
           <Row>
-            <Col md={6}>
+            <Col md={12}>
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant='flush'>

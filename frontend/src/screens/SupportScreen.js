@@ -2,17 +2,20 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { Row, Col, ListGroup, Card, Button, Form } from 'react-bootstrap'
+import Meta from '../components/Meta'
 
 const SupportScreen = () => {
   return (
     <div>
-      <Link className='btn btn-light my-3' to='/'>
+      <Meta title={'Support'} />
+
+      <Link className='btn btn-light my-5' to='/'>
         {' '}
         Go Back
       </Link>
 
       <>
-        <Row>
+        <Row className='my-5'>
           <Col md={6}>
             <ListGroup variant='flush'>
               <ListGroup.Item>
