@@ -43,6 +43,7 @@ h2 {
   margin: 0 auto;
 }
 
+/* Jumbotron */
 .jumbo-bg {
   background-image: url('https://media.giphy.com/media/U0bfNMZtmFLzi/giphy.gif');
   /* url('https://media.giphy.com/media/U4Go7iP5vb8NstoCjv/giphy.gif'),
@@ -51,4 +52,11 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.jumbo-h1 {
+  font-size: 6vw;
+}
+.jumbo-h4 {
+  font-size: 3vw;
 }
