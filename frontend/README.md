@@ -23,7 +23,7 @@ git clone: https://github.com/VanVDC/e-shop.git
 
 - `npm install` in frontend folder
 
-- `npm run dev` to start the client and server
+- `npm run start` to start the client
 
 #### Demo:
 
