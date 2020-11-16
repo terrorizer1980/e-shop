@@ -34,7 +34,6 @@ PAYPAL_CLIENT_ID=your-id-here
 - Visit `localhost:3000`
 
 #### Built With:
-- [react](https://github.com/stripe/stripe-node)
 - [Node](https://nodejs.org/en/)
 - [Express](https://github.com/expressjs/express)
 - [Paypal](https://developer.paypal.com/home/)
