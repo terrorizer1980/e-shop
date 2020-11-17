@@ -1,6 +1,6 @@
 # EV-Wheels's Shop client side
 
-An online shop selling personal ev tranporters.
+An e-commerce site selling personal ev wheels with admin management functionality.
 
 - [Server side](https://github.com/VanVDC/e-shop)
 
@@ -10,8 +10,10 @@ An online shop selling personal ev tranporters.
 
 - Login/Logout Functionality
 - Buying products and checking out
-- In Admin account, the user can create new product
+- In Admin account, the user can create new product, delete account, delete product, set admin, and set delivery and payment.
 - Payment with PayPal and credit card
+
+![demo](./src/assets/demo.gif)
 
 #### Instructions:
 
@@ -110,11 +112,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-
-
-
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
