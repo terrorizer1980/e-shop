@@ -246,7 +246,7 @@ const ProductScreen = ({ history, match }) => {
                     </Form>
                   ) : (
                     <Message>
-                      Please <Link to='/login'>Sign In</Link>
+                      Please <Link to='/login'>Sign In </Link>
                       to write a review
                     </Message>
                   )}
