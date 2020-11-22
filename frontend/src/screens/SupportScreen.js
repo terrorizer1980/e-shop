@@ -86,13 +86,13 @@ const SupportScreen = () => {
                     </Col>
                   </Row>
                 </ListGroup.Item>
-                {/* <ListGroup.Item>
+                <ListGroup.Item>
                   <Col>
                     <Link to='/'>
                       <img alt='' src='./logo.svg' width='170' height='170' />
                     </Link>
                   </Col>
-                </ListGroup.Item> */}
+                </ListGroup.Item>
               </ListGroup>
             </Card>
           </Col>
