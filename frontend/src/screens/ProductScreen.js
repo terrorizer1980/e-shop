@@ -164,6 +164,7 @@ const ProductScreen = ({ history, match }) => {
             </Col>
           </Row>
           <Row className='my-3 textAlign-center'>
+            <Col md={2}></Col>
             <Col md={2}>
               <h4>Weight</h4>
               {weight} Ibs
