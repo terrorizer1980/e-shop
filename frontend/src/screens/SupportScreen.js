@@ -63,25 +63,25 @@ const SupportScreen = () => {
                     <Col>
                       <i
                         style={{ cursor: 'pointer' }}
-                        class='fab fa-facebook fa-2x'
+                        className='fab fa-facebook fa-2x'
                       ></i>
                     </Col>
                     <Col>
                       <i
                         style={{ cursor: 'pointer' }}
-                        class='fab fa-twitter-square fa-2x'
+                        className='fab fa-twitter-square fa-2x'
                       ></i>
                     </Col>
                     <Col>
                       <i
                         style={{ cursor: 'pointer' }}
-                        class='fab fa-youtube-square fa-2x'
+                        className='fab fa-youtube-square fa-2x'
                       ></i>
                     </Col>
                     <Col>
                       <i
                         style={{ cursor: 'pointer' }}
-                        class='fab fa-linkedin fa-2x'
+                        className='fab fa-linkedin fa-2x'
                       ></i>
                     </Col>
                   </Row>

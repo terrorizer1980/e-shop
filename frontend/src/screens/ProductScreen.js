@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
+import ReactPlayer from 'react-player'
 import Rating from '../components/Rating'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
@@ -21,6 +22,21 @@ const ProductScreen = ({ history, match }) => {
 
   const productDetails = useSelector((state) => state.productDetails)
   const { loading, error, product } = productDetails
+  let [range, battery, motorPower, speed, weight] = [0, 0, 0, 0, 0]
+
+  if (product.specs) {
+    range = product.specs.range
+    battery = product.specs.battery
+    motorPower = product.specs.motorPower
+    speed = product.specs.speed
+    weight = product.specs.weight
+  } else {
+    range = 0
+    battery = 0
+    motorPower = 0
+    speed = 0
+    weight = 0
+  }
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
@@ -145,6 +161,38 @@ const ProductScreen = ({ history, match }) => {
                   </ListGroup.Item>
                 </ListGroup>
               </Card>
+            </Col>
+          </Row>
+          <Row className='my-3 textAlign-center'>
+            <Col md={2}>
+              <h4>Weight</h4>
+              {weight} Ibs
+            </Col>
+            <Col md={2}>
+              <h4>Speed</h4>
+              {speed} MPH
+            </Col>
+            <Col md={2}>
+              <h4>Range</h4>
+              {range} miles
+            </Col>
+            <Col md={2}>
+              <h4>Motor</h4>
+              {motorPower} W
+            </Col>
+            <Col md={2}>
+              <h4>Battery</h4>
+              {battery} Wh
+            </Col>
+          </Row>
+          <Row>
+            <Col md={12}>
+              <h2>Video</h2>
+              <ReactPlayer
+                url={product.youtubeURL}
+                muted={true}
+                controls={false}
+              />
             </Col>
           </Row>
           <Row>
