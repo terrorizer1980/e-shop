@@ -189,11 +189,11 @@ const ProductScreen = ({ history, match }) => {
           <Row>
             <Col md={12}>
               <h2>Video</h2>
-              <ReactPlayer
+              {/* <ReactPlayer
                 url={product.youtubeURL}
                 muted={true}
                 controls={false}
-              />
+              /> */}
             </Col>
           </Row>
           <Row>
