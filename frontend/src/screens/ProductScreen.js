@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
-import ReactPlayer from 'react-player'
 import Rating from '../components/Rating'
-import Loader from '../components/Loader'
 import Message from '../components/Message'
+import Loader from '../components/Loader'
 import Meta from '../components/Meta'
 import {
   listProductDetails,
@@ -22,21 +21,6 @@ const ProductScreen = ({ history, match }) => {
 
   const productDetails = useSelector((state) => state.productDetails)
   const { loading, error, product } = productDetails
-  // let [range, battery, motorPower, speed, weight] = [0, 0, 0, 0, 0]
-
-  // if (product.specs) {
-  //   range = product.specs.range
-  //   battery = product.specs.battery
-  //   motorPower = product.specs.motorPower
-  //   speed = product.specs.speed
-  //   weight = product.specs.weight
-  // } else {
-  //   range = 0
-  //   battery = 0
-  //   motorPower = 0
-  //   speed = 0
-  //   weight = 0
-  // }
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
@@ -44,17 +28,19 @@ const ProductScreen = ({ history, match }) => {
   const productReviewCreate = useSelector((state) => state.productReviewCreate)
   const {
     success: successProductReview,
+    loading: loadingProductReview,
     error: errorProductReview,
   } = productReviewCreate
 
   useEffect(() => {
     if (successProductReview) {
-      alert('Review Submitted!')
       setRating(0)
       setComment('')
+    }
+    if (!product._id || product._id !== match.params.id) {
+      dispatch(listProductDetails(match.params.id))
       dispatch({ type: PRODUCT_CREATE_REVIEW_RESET })
     }
-    dispatch(listProductDetails(match.params.id))
   }, [dispatch, match, successProductReview])
 
   const addToCartHandler = () => {
@@ -72,9 +58,8 @@ const ProductScreen = ({ history, match }) => {
   }
 
   return (
-    <div>
+    <>
       <Link className='btn btn-light my-3' to='/'>
-        {' '}
         Go Back
       </Link>
       {loading ? (
@@ -92,9 +77,7 @@ const ProductScreen = ({ history, match }) => {
               <ListGroup variant='flush'>
                 <ListGroup.Item>
                   <h3>{product.name}</h3>
-                  <ListGroup.Item> Category: {product.category}</ListGroup.Item>
                 </ListGroup.Item>
-
                 <ListGroup.Item>
                   <Rating
                     value={product.rating}
@@ -118,6 +101,7 @@ const ProductScreen = ({ history, match }) => {
                       </Col>
                     </Row>
                   </ListGroup.Item>
+
                   <ListGroup.Item>
                     <Row>
                       <Col>Status:</Col>
@@ -149,6 +133,7 @@ const ProductScreen = ({ history, match }) => {
                       </Row>
                     </ListGroup.Item>
                   )}
+
                   <ListGroup.Item>
                     <Button
                       onClick={addToCartHandler}
@@ -163,41 +148,8 @@ const ProductScreen = ({ history, match }) => {
               </Card>
             </Col>
           </Row>
-          <Row className='my-3 textAlign-center'>
-            {/* <Col md={2}></Col>
-            <Col md={2}>
-              <h4>Weight</h4>
-              {weight} Ibs
-            </Col>
-            <Col md={2}>
-              <h4>Speed</h4>
-              {speed} MPH
-            </Col>
-            <Col md={2}>
-              <h4>Range</h4>
-              {range} miles
-            </Col>
-            <Col md={2}>
-              <h4>Motor</h4>
-              {motorPower} W
-            </Col>
-            <Col md={2}>
-              <h4>Battery</h4>
-              {battery} Wh
-            </Col> */}
-          </Row>
           <Row>
-            <Col md={12}>
-              <h2>Video</h2>
-              {/* <ReactPlayer
-                url={product.youtubeURL}
-                muted={true}
-                controls={false}
-              /> */}
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12}>
+            <Col md={6}>
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant='flush'>
@@ -211,6 +163,12 @@ const ProductScreen = ({ history, match }) => {
                 ))}
                 <ListGroup.Item>
                   <h2>Write a Customer Review</h2>
+                  {successProductReview && (
+                    <Message variant='success'>
+                      Review submitted successfully
+                    </Message>
+                  )}
+                  {loadingProductReview && <Loader />}
                   {errorProductReview && (
                     <Message variant='danger'>{errorProductReview}</Message>
                   )}
@@ -240,14 +198,17 @@ const ProductScreen = ({ history, match }) => {
                           onChange={(e) => setComment(e.target.value)}
                         ></Form.Control>
                       </Form.Group>
-                      <Button type='submite' variant='primary'>
+                      <Button
+                        disabled={loadingProductReview}
+                        type='submit'
+                        variant='primary'
+                      >
                         Submit
                       </Button>
                     </Form>
                   ) : (
                     <Message>
-                      Please <Link to='/login'>Sign In </Link>
-                      to write a review
+                      Please <Link to='/login'>sign in</Link> to write a review{' '}
                     </Message>
                   )}
                 </ListGroup.Item>
@@ -256,7 +217,7 @@ const ProductScreen = ({ history, match }) => {
           </Row>
         </>
       )}
-    </div>
+    </>
   )
 }
 
