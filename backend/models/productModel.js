@@ -43,6 +43,16 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    youtubeURL: {
+      type: String,
+    },
+    specs: {
+      range: { type: Number },
+      speed: { type: Number },
+      weight: { type: Number },
+      motorPower: { type: Number },
+      battery: { type: Number },
+    },
     reviews: [reviewSchema],
     rating: {
       type: Number,
