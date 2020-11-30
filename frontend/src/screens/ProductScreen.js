@@ -191,8 +191,9 @@ const ProductScreen = ({ history, match }) => {
               <h2>Video</h2>
               <ReactPlayer
                 url={product.youtubeURL}
-                muted={true}
+                muted={false}
                 controls={false}
+                volume={0.4}
               />
             </Col>
           </Row>
