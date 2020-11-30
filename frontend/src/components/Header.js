@@ -21,10 +21,10 @@ const Header = () => {
           <LinkContainer to='/'>
             <Navbar.Brand>
               {/* <img
-                alt=''
-                src='./logo.svg'
-                width='30'
-                height='30'
+                alt='logo'
+                src='logo.svg'
+                width='30px'
+                height='30px'
                 className='d-inline-block align-top'
               />{' '} */}
               EV-Wheels
