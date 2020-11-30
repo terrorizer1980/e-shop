@@ -153,8 +153,8 @@ const getTopProducts = asyncHandler(async (req, res) => {
   const skateboards = await Product.find({
     category: 'Electric Skateboard',
   }).limit(2)
-  const scooter = await Product.find({ category: 'Electric Scooter' }).limit(1)
-  const bike = await Product.find({ category: 'Electric Bike' }).limit(1)
+  const scooter = await Product.find({ category: 'Electric Scooter' })
+  const bike = await Product.find({ category: 'Electric Bike' })
   const products = [...euc, ...skateboards, ...scooter, ...bike]
 
   res.json(products)
