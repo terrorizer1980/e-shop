@@ -89,7 +89,7 @@ const SupportScreen = () => {
                 <ListGroup.Item>
                   <Col>
                     <Link to='/'>
-                      <img alt='' src='./logo.svg' width='170' height='170' />
+                      <img alt='' src='racing.svg' width='170' height='170' />
                     </Link>
                   </Col>
                 </ListGroup.Item>
