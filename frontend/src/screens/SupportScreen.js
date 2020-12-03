@@ -14,7 +14,7 @@ const SupportScreen = () => {
         Go Back
       </Link>
 
-      {/* <>
+      <>
         <Row className='my-5'>
           <Col md={6}>
             <ListGroup variant='flush'>
@@ -97,7 +97,7 @@ const SupportScreen = () => {
             </Card>
           </Col>
         </Row>
-      </> */}
+      </>
     </div>
   )
 }
