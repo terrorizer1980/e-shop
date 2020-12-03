@@ -1,10 +1,14 @@
-// @desc    Auth user & get token
-// @route   POST /api/users/login
-// @access  Public
+import asyncHandler from 'express-async-handler'
+import generateToken from '../utils/generageToken.js'
+import User from '../models/userModel.js'
+
+//@desc Auth user & get token
+//@route POST /api/users/login
+//@access Public
 const authUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body
 
-  const user = await User.findOne({ email })
+  const user = await User.findOne({ email: email })
 
   if (user && (await user.matchPassword(password))) {
     res.json({
@@ -20,16 +24,16 @@ const authUser = asyncHandler(async (req, res) => {
   }
 })
 
-// @desc    Register a new user
-// @route   POST /api/users
-// @access  Public
+//@desc Register a new user
+//@route POST /api/users
+//@access Public
 const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password } = req.body
 
-  const userExists = await User.findOne({ email })
+  const userExists = await User.findOne({ email: email })
 
   if (userExists) {
-    res.status(400)
+    res.status(404)
     throw new Error('User already exists')
   }
 
@@ -38,7 +42,6 @@ const registerUser = asyncHandler(async (req, res) => {
     email,
     password,
   })
-
   if (user) {
     res.status(201).json({
       _id: user._id,
@@ -53,12 +56,11 @@ const registerUser = asyncHandler(async (req, res) => {
   }
 })
 
-// @desc    Get user profile
-// @route   GET /api/users/profile
-// @access  Private
+//@desc Get user profile
+//@route GET /api/users/login
+//@access private
 const getUserProfile = asyncHandler(async (req, res) => {
   const user = await User.findById(req.user._id)
-
   if (user) {
     res.json({
       _id: user._id,
@@ -157,8 +159,8 @@ const updateUser = asyncHandler(async (req, res) => {
 
 export {
   authUser,
-  registerUser,
   getUserProfile,
+  registerUser,
   updateUserProfile,
   getUsers,
   deleteUser,
