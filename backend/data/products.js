@@ -85,13 +85,13 @@ const products = [
     description:
       'Get a better handle on your ride with this smaller and lighter wheel. Pint features Simplestop dismount technology, enabling new riders to learn to ride quickly and feel confident.',
     youtubeURL: 'https://www.youtube.com/watch?v=HzHWTWQ2rfk',
-    // specs: {
-    //   range: 10,
-    //   speed: 16,
-    //   weight: 23,
-    //   motorPower: 750,
-    //   battery: 140,
-    // },
+    specs: {
+      range: 10,
+      speed: 16,
+      weight: 23,
+      motorPower: 750,
+      battery: 140,
+    },
     brand: 'OneWheel',
     category: 'Electric Skateboard',
     price: 899.99,
@@ -160,7 +160,5 @@ const products = [
     numReviews: 0,
   },
 ]
-
-// export default products
 
 export default products
