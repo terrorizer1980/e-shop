@@ -20,13 +20,13 @@ const Header = () => {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              {/* <img
+              <img
                 alt='logo'
                 src='racing.png'
                 width='30px'
                 height='30px'
                 className='d-inline-block align-top'
-              />{' '} */}
+              />{' '}
               EV-Wheels
             </Navbar.Brand>
           </LinkContainer>
