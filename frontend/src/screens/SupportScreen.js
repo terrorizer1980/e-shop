@@ -54,9 +54,7 @@ const SupportScreen = () => {
             <Card>
               <ListGroup variant='flush'>
                 <ListGroup.Item>
-                  <Row>
-                    <Col>Connect with Us:</Col>
-                  </Row>
+                  <h3>Connect with Us</h3>
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <Row>
@@ -89,7 +87,7 @@ const SupportScreen = () => {
                 <ListGroup.Item>
                   <Col>
                     <Link to='/'>
-                      <img alt='' src='racing.svg' width='170' height='170' />
+                      <img alt='' src='racing.svg' width='150' height='125' />
                     </Link>
                   </Col>
                 </ListGroup.Item>
