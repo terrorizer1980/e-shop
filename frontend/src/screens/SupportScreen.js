@@ -55,7 +55,7 @@ const SupportScreen = () => {
               <ListGroup variant='flush'>
                 <ListGroup.Item>
                   <Row>
-                    <Col>Connect with us on social media:</Col>
+                    <Col>Connect with Us:</Col>
                   </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>
