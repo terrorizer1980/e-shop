@@ -47,7 +47,8 @@ const UserListScreen = ({ history }) => {
               <th>NAME</th>
               <th>EMAIL</th>
               <th>ADMIN</th>
-              <th></th>
+              <th>EDIT</th>
+              <th>DELETE</th>
             </tr>
           </thead>
           <tbody>
@@ -73,13 +74,15 @@ const UserListScreen = ({ history }) => {
                     </Button>
                   </LinkContainer>
                 </td>
-                <Button
-                  variant='danger'
-                  className='btn-sm'
-                  onClick={() => deleteHandler(user._id)}
-                >
-                  <i className='fas fa-trash'></i>
-                </Button>
+                <td>
+                  <Button
+                    variant='danger'
+                    className='btn-sm'
+                    onClick={() => deleteHandler(user._id)}
+                  >
+                    <i className='fas fa-trash'></i>
+                  </Button>
+                </td>
               </tr>
             ))}
           </tbody>
