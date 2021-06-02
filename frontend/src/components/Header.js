@@ -16,16 +16,14 @@ const Header = () => {
   };
   return (
     <header>
-      <Navbar
-        className='header-container'
-        bg='light'
-        variant='light'
-        expand='lg'
-        collapseOnSelect
-      >
+      <Navbar bg='light' variant='light' expand='lg' collapseOnSelect>
+        {/* <nav
+          className=' justify-content-space-between container-fluid'
+          style={{ width: '100%' }}
+        > */}
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='ml-auto'>
+          <Nav className=' justify-content-start'>
             {'      '}
             <LinkContainer to='/support'>
               <Nav.Link> Support</Nav.Link>
@@ -82,6 +80,7 @@ const Header = () => {
         </LinkContainer>
         <Route render={({ history }) => <SearchBox history={history} />} />
         {/* </Container> */}
+        {/* </nav> */}
       </Navbar>
     </header>
   );
