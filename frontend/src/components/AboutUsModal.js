@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
-import Modal from 'react-bootstrap/Modal'
-import { Button } from 'react-bootstrap'
+import React, { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+import { Button } from 'react-bootstrap';
 
 const AboutUsModal = () => {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
 
   return (
     <>
       <Button
         variant='light'
         onClick={() => setShow(true)}
-        className='my-5 font-weight-bold'
+        className=' font-weight-bold'
       >
         About US{' '}
       </Button>
@@ -19,12 +19,11 @@ const AboutUsModal = () => {
         show={show}
         onHide={() => setShow(false)}
         dialogClassName='modal-90w'
-        aria-labelledby='example-custom-modal-styling-title'
+        aria-labelledby='about-us'
+        size='xl'
       >
         <Modal.Header closeButton>
-          <Modal.Title id='example-custom-modal-styling-title'>
-            ABOUT EV-Wheels
-          </Modal.Title>
+          <Modal.Title id='about-us'>ABOUT EV-Wheels</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>
@@ -36,7 +35,7 @@ const AboutUsModal = () => {
         </Modal.Body>
       </Modal>
     </>
-  )
-}
+  );
+};
 
-export default AboutUsModal
+export default AboutUsModal;

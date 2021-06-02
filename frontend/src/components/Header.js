@@ -3,6 +3,8 @@ import { Route } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import AboutUsModal from './AboutUsModal';
+
 import SearchBox from './SearchBox';
 import { logout } from '../actions/userActions';
 
@@ -25,17 +27,12 @@ const Header = () => {
       >
         <Nav className=' justify-content-start'>
           {'      '}
-          <LinkContainer to='/about-us'>
+          {/* <LinkContainer to='/about-us'>
             <Nav.Link> Our Story</Nav.Link>
-          </LinkContainer>
+          </LinkContainer> */}
+          <AboutUsModal />
           <LinkContainer to='/support'>
             <Nav.Link> Support</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to='/cart'>
-            <Nav.Link>
-              {' '}
-              <i className='fas fa-shopping-cart'></i> Cart
-            </Nav.Link>
           </LinkContainer>
         </Nav>
 
@@ -53,6 +50,12 @@ const Header = () => {
         </LinkContainer>
         <div className='header-container'>
           <Route render={({ history }) => <SearchBox history={history} />} />
+          <LinkContainer to='/cart'>
+            <Nav.Link>
+              {' '}
+              <i className='fas fa-shopping-cart'></i> Cart
+            </Nav.Link>
+          </LinkContainer>
           {userInfo ? (
             <NavDropdown title={userInfo.name} id='username'>
               <LinkContainer to='/profile'>
