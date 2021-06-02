@@ -1,18 +1,18 @@
-import React, { useState } from 'react'
-import { Form, Button } from 'react-bootstrap'
+import React, { useState } from 'react';
+import { Form, Button } from 'react-bootstrap';
 const SearchBox = ({ history }) => {
-  const [keyword, setKeyword] = useState('')
+  const [keyword, setKeyword] = useState('');
 
   const submiteHandler = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (keyword.trim()) {
-      history.push(`/search/${keyword}`)
+      history.push(`/search/${keyword}`);
     } else {
-      history.push('/')
+      history.push('/');
     }
-  }
+  };
   return (
-    <Form onSubmit={submiteHandler} inline style={{ marginRight: 20 }}>
+    <Form onSubmit={submiteHandler} inline>
       <Form.Control
         type='text'
         name='q'
@@ -24,7 +24,7 @@ const SearchBox = ({ history }) => {
         <i className='fab fa-searchengin fa-1.2x'></i>
       </Button>
     </Form>
-  )
-}
+  );
+};
 
-export default SearchBox
+export default SearchBox;

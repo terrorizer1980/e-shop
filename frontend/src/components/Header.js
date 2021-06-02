@@ -52,7 +52,6 @@ const Header = () => {
           <Route render={({ history }) => <SearchBox history={history} />} />
           <LinkContainer to='/cart'>
             <Nav.Link>
-              {' '}
               <i className='fas fa-shopping-cart'></i> Cart
             </Nav.Link>
           </LinkContainer>
