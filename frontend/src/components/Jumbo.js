@@ -1,6 +1,6 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-// import { withRouter } from 'react-router-dom'
+import Header from './Header';
 const Jumbo = () => {
   let styles = {
     color: 'white',
@@ -8,16 +8,8 @@ const Jumbo = () => {
 
   return (
     <>
-      <Jumbotron style={styles} className='jumbo-bg'>
-        {/* <img
-            alt=''
-            src='./logo.svg'
-            width='200'
-            height='200'
-            className='d-inline-block align-top'
-          />{' '} */}
-
-        <div style={styles} className='text-center '>
+      <Jumbotron className='jumbo-bg d-flex justify-content-center align-items-center '>
+        <div style={styles} className='text-center'>
           <h1 className='jumbo-h1 text-capitalize font-weight-bold '>
             Welcome to EV-Wheels
           </h1>
