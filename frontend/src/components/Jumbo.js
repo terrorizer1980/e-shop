@@ -1,11 +1,10 @@
-import React from 'react'
-import AboutUsModal from './AboutUsModal'
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import React from 'react';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 // import { withRouter } from 'react-router-dom'
 const Jumbo = () => {
   let styles = {
     color: 'white',
-  }
+  };
 
   return (
     <>
@@ -25,11 +24,10 @@ const Jumbo = () => {
           <h4 className='jumbo-h4 '>
             Find the best personal transport devices on the Web!
           </h4>
-          <AboutUsModal />
         </div>
       </Jumbotron>
     </>
-  )
-}
+  );
+};
 
-export default Jumbo
+export default Jumbo;
