@@ -20,8 +20,8 @@ const Header = () => {
     <header>
       <Navbar
         className=' justify-content-between'
-        bg='light'
-        variant='light'
+        bg='dark'
+        variant='dark'
         expand='lg'
         collapseOnSelect
       >
@@ -50,7 +50,7 @@ const Header = () => {
           </Navbar.Brand>
         </LinkContainer>
         <div className='header-container'>
-          <Route render={({ history }) => <SearchBox history={history} />} />
+          {/* <Route render={({ history }) => <SearchBox history={history} />} /> */}
           <LinkContainer to='/cart'>
             <Nav.Link>
               <i className='fas fa-shopping-cart'></i> Cart
