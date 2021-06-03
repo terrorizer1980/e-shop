@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ShopListScreen = () => {
-  return <div></div>;
+  return <div>shop screen</div>;
 };
 
 export default ShopListScreen;
