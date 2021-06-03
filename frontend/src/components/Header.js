@@ -27,15 +27,13 @@ const Header = () => {
       >
         <Nav className=' justify-content-start'>
           {'      '}
-          {/* <LinkContainer to='/about-us'>
-            <Nav.Link> Our Story</Nav.Link>
-          </LinkContainer> */}
+
           <AboutUsModal />
           <LinkContainer to='/support'>
             <Nav.Link> Support</Nav.Link>
           </LinkContainer>
           <LinkContainer to='/store'>
-            <Nav.Link> Srore</Nav.Link>
+            <Nav.Link> Store</Nav.Link>
           </LinkContainer>
         </Nav>
 
