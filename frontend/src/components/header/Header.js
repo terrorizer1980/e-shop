@@ -18,14 +18,14 @@ const Header = () => {
   return (
     <header className='header-container'>
       <div className='left-header'>
-        <LinkContainer to='/support'>
-          <Nav.Link> About Us</Nav.Link>
+        <LinkContainer to='/aboutus'>
+          <div className='link left-header-link'> ABOUT US</div>
         </LinkContainer>
         <LinkContainer to='/support'>
-          <Nav.Link> Support</Nav.Link>
+          <div className='link left-header-link'> SUPPORT</div>
         </LinkContainer>
         <LinkContainer to='/store'>
-          <Nav.Link> Store</Nav.Link>
+          <div className='link left-header-link'> SHOP</div>
         </LinkContainer>
       </div>
 
@@ -45,23 +45,18 @@ const Header = () => {
       </div>
 
       <div className='right-header'>
-        <LinkContainer to='/cart'>
-          <Nav.Link>
-            <i className='fas fa-shopping-cart'></i> Cart
-          </Nav.Link>
-        </LinkContainer>
         {userInfo ? (
           <NavDropdown title={userInfo.name} id='username'>
             <LinkContainer to='/profile'>
               <NavDropdown.Item>Profile</NavDropdown.Item>
             </LinkContainer>
-            <NavDropdown.Item onClick={logoutHandler}>Logout</NavDropdown.Item>
+            <NavDropdown.Item onClick={logoutHandler}>LOGOUT</NavDropdown.Item>
           </NavDropdown>
         ) : (
-          <LinkContainer to='/login'>
-            <Nav.Link>
-              <i className='fas fa-user'></i> Sign In
-            </Nav.Link>
+          <LinkContainer className='button-content' to='/login'>
+            <button className='button button-header'>
+              <span>LOGIN</span>
+            </button>
           </LinkContainer>
         )}
         {userInfo && userInfo.isAdmin && (
@@ -77,6 +72,11 @@ const Header = () => {
             </LinkContainer>
           </NavDropdown>
         )}
+        <LinkContainer to='/cart'>
+          <Nav.Link>
+            <i className='fas fa-shopping-cart'></i>
+          </Nav.Link>
+        </LinkContainer>
       </div>
     </header>
   );

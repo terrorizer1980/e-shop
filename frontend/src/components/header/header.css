@@ -7,3 +7,135 @@
 .right-header {
   display: flex;
 }
+.link {
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  white-space: nowrap;
+  color: white;
+  margin-right: 0.9rem;
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: white;
+
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: '';
+  /* show by default */
+}
+
+.left-header-link {
+  font-family: europa, sans-serif;
+}
+
+.left-header-link::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.left-header-link:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+.left-header-link::after {
+  content: '';
+  top: calc(100% + 4px);
+  transform-origin: 0% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.left-header-link:hover::after {
+  transform-origin: 100% 50%;
+  transform: scale3d(1, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+button:focus {
+  /* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+  outline: none;
+}
+
+button:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+}
+
+button:focus-visible {
+  /* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+  outline: 2px solid #443ffc;
+  outline-offset: 3px;
+}
+
+.button {
+  pointer-events: auto;
+  cursor: pointer;
+  background: #e7e7e7;
+  border: none;
+  padding: 1.5rem 3rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button--dione {
+  background: none;
+  font-family: obvia, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  padding: 1.5rem 3rem;
+}
+
+.button-header span {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+}
+
+.button-header::before {
+  content: '';
+  background: #000;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.7, 1);
+}
+
+.button-header:hover::before {
+  transform: scale3d(0.9, 0.8, 1);
+}
+
+.button-header::after {
+  content: '';
+  border: 1px solid #000;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.7, 1);
+  border-radius: 0px;
+  transform: scale3d(0.85, 0.65, 1);
+}
+
+.button-header:hover::after {
+  transform: scale3d(1, 1, 1);
+}
