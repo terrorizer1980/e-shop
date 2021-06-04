@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
 import { logout } from '../../actions/userActions';
+import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
 
 import './header.css';
 
@@ -31,7 +32,7 @@ const Header = () => {
 
       <div className='header-brand'>
         <LinkContainer to='/'>
-          <Navbar.Brand>
+          <div>
             <img
               alt='logo'
               src='/images/racing.png'
@@ -40,7 +41,7 @@ const Header = () => {
               className='d-inline-block align-top'
             />{' '}
             EV-Wheels
-          </Navbar.Brand>
+          </div>
         </LinkContainer>
       </div>
 
@@ -73,9 +74,10 @@ const Header = () => {
           </NavDropdown>
         )}
         <LinkContainer to='/cart'>
-          <Nav.Link>
+          <span className='cart-icon'>
             <i className='fas fa-shopping-cart'></i>
-          </Nav.Link>
+            <ShoppingIcon className='shopping-icon' />
+          </span>
         </LinkContainer>
       </div>
     </header>
