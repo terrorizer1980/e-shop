@@ -8,8 +8,8 @@
   display: flex;
 }
 .cart-icon {
-  width: 45px;
-  height: 45px;
+  width: 1.5rem;
+  margin-left: 3px;
   position: relative;
   display: flex;
   align-items: center;
