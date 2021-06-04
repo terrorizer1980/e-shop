@@ -1,6 +1,8 @@
 .header-container {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
 }
 
 .left-header,
@@ -34,7 +36,7 @@
   height: 1px;
   background: white;
 
-  top: 65%;
+  top: 1.2em;
   left: 0;
   pointer-events: none;
 }
@@ -62,7 +64,7 @@
 
 .left-header-link::after {
   content: '';
-  top: calc(40% + 4px);
+  top: calc(1.2em + 4px);
   transform-origin: 0% 50%;
   transform: scale3d(0, 1, 1);
   transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
