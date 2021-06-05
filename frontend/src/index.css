@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Nanum+Gothic:wght@800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@700&family=Noto+Serif+TC:wght@700&family=Roboto&display=swap');
+
+/* h1 = Noto Serif TC hero
+    h2 = mukta vaani header
+    basic = Roboto
+*/
 
 main {
   min-height: 80vh;
-  font-family: 'Nanum Gothic', sans-serif;
 }
 
 h3 {
@@ -10,12 +14,18 @@ h3 {
 }
 
 h1 {
+  font-family: 'Noto Serif TC', sans-serif;
+
   font-size: 1.8rem;
   padding: 1rem 0;
 }
 h2 {
+  font-family: 'Mukta Vaani', sans-serif;
   font-size: 1.4rem;
   padding: 0.5rem 0;
+}
+p {
+  font-family: 'Roboto', sans-serif;
 }
 .rating span {
   margin: 0.1rem;
@@ -59,8 +69,9 @@ h2 {
     url('https://media.giphy.com/media/WqRft6rPLzosZZbk7V/giphy.gif'); */
 
   /* put bg im behide the nav */
-  margin-top: -80px;
+  font-family: 'Noto Serof TC', sans-serif;
 
+  margin-top: -80px;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,4 +83,15 @@ h2 {
 }
 .jumbo-h4 {
   font-size: 3vw;
+}
+
+.jumbo-h1,
+.jumbo-h4 {
+  text-shadow: 0 2px 8px rgba(54, 9, 9, 0.4);
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.54px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }

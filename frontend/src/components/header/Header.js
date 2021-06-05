@@ -32,14 +32,9 @@ const Header = () => {
       <div className='header-brand'>
         <LinkContainer to='/'>
           <div className='header-logo'>
-            <img
-              alt='logo'
-              src='/images/racing.png'
-              width='30px'
-              height='30px'
-              className='d-inline-block align-top'
-            />{' '}
-            <span className='logo'>EV-Wheels</span>
+            <span className='logo-text'>EV</span>
+            <img alt='logo' src='/images/racing.png' />{' '}
+            <span className='logo-text'>Wheels</span>
           </div>
         </LinkContainer>
       </div>

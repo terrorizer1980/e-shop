@@ -11,7 +11,7 @@
 }
 .cart-icon {
   width: 1.5rem;
-  margin-left: 3px;
+  margin-left: 1em;
   position: relative;
   display: flex;
   align-items: center;
@@ -142,7 +142,23 @@ button:focus {
 .button-header:hover::after {
   transform: scale3d(1, 1, 1);
 }
-
+.header-brand {
+  cursor: pointer;
+}
 .header-logo {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Mukta Vaani', sans-serif;
+}
+.header-logo img {
+  padding: 2px 4px;
+  margin: 5px 2px;
+}
+.logo-text {
+  font-size: 1.2em;
+  color: #ebebeb;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 1.62px;
+  text-transform: uppercase;
 }
