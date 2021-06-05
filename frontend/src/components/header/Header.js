@@ -31,7 +31,7 @@ const Header = () => {
 
       <div className='header-brand'>
         <LinkContainer to='/'>
-          <div>
+          <div className='header-logo'>
             <img
               alt='logo'
               src='/images/racing.png'
@@ -39,7 +39,7 @@ const Header = () => {
               height='30px'
               className='d-inline-block align-top'
             />{' '}
-            EV-Wheels
+            <span className='logo'>EV-Wheels</span>
           </div>
         </LinkContainer>
       </div>

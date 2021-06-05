@@ -3,7 +3,6 @@
   justify-content: space-between;
   padding: 1rem 2rem;
   align-items: center;
-
   background: rgba(240, 231, 231, 0.87);
 }
 .left-header,
@@ -142,4 +141,8 @@ button:focus {
 
 .button-header:hover::after {
   transform: scale3d(1, 1, 1);
+}
+
+.header-logo {
+  font-family: 'Nanum Gothic', sans-serif;
 }
