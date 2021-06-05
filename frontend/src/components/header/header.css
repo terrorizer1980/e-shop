@@ -3,8 +3,9 @@
   justify-content: space-between;
   padding: 1rem 2rem;
   align-items: center;
-}
 
+  background: rgba(240, 231, 231, 0.87);
+}
 .left-header,
 .right-header {
   display: flex;
@@ -88,12 +89,12 @@ button:focus {
 .button {
   pointer-events: auto;
   cursor: pointer;
-  background: #e7e7e7;
+  background: rgba(253, 253, 253, 0.1);
   border: none;
   padding: 0.5rem 3rem;
   margin: 0;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.8rem;
   position: relative;
   display: inline-block;
 }
@@ -123,7 +124,7 @@ button:focus {
 
 .button-header::before {
   content: '';
-  background: #000;
+  background: rgba(236, 238, 236, 0.1);
   transition: transform 0.3s cubic-bezier(0.2, 1, 0.7, 1);
 }
 
@@ -133,7 +134,7 @@ button:focus {
 
 .button-header::after {
   content: '';
-  border: 1px solid #000;
+  border: 1px solid white;
   transition: transform 0.3s cubic-bezier(0.2, 1, 0.7, 1);
   border-radius: 0px;
   transform: scale3d(0.85, 0.65, 1);
