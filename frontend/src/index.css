@@ -69,6 +69,7 @@ p {
 }
 
 /* Jumbotron */
+
 .jumbo-bg {
   background-image: url('https://media.giphy.com/media/U0bfNMZtmFLzi/giphy.gif');
   /* url('https://media.giphy.com/media/U4Go7iP5vb8NstoCjv/giphy.gif'),
@@ -83,6 +84,51 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.jumbo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  display: block;
+  width: 125px;
+  height: 5px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.5;
+  margin-bottom: 60px;
+}
+
+.enter-btn:hover {
+  color: #ffffff;
+}
+.enter-btn a:hover {
+  outline: 0;
+  outline-color: currentColor;
+  outline-style: none;
+  outline-width: 0px;
+}
+
+.btn-i--white::after {
+  background-color: #ffffff;
+}
+.enter-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 1;
+  top: auto;
+}
+.btn-i--white {
+  color: #ffffff;
+}
 
 .enter-btn {
   font-size: 20px;
@@ -93,15 +139,7 @@ p {
   transition: all 0.3s ease;
   position: relative;
 }
-.enter-btn:hover {
-  color: #ffffff;
-}
-.enter-btn a:hover {
-  outline: 0;
-  outline-color: currentColor;
-  outline-style: none;
-  outline-width: 0px;
-}
+
 .jumbo-h1 {
   font-size: 6vw;
 }
