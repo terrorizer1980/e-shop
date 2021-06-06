@@ -71,6 +71,7 @@ p {
 /* Jumbotron */
 
 .jumbo-bg {
+  background-color: transparent;
   background-image: url('https://media.giphy.com/media/U0bfNMZtmFLzi/giphy.gif');
   /* url('https://media.giphy.com/media/U4Go7iP5vb8NstoCjv/giphy.gif'),
     url('https://media.giphy.com/media/WqRft6rPLzosZZbk7V/giphy.gif'); */
@@ -78,7 +79,7 @@ p {
   /* put bg im behide the nav */
   font-family: 'Noto Serof TC', sans-serif;
 
-  margin-top: -80px;
+  margin-top: -10em;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
