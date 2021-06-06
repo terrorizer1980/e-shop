@@ -115,6 +115,7 @@ p {
 
 a.enter-shop.link-enter {
   font-size: 20px;
+  color: white;
 }
 
 .enter-shop::before,
@@ -126,9 +127,13 @@ a.enter-shop.link-enter {
   left: 0;
   background: white;
   pointer-events: none;
+
+  color: white;
 }
 .enter-shop::before {
   content: '';
+
+  color: white;
 }
 
 .link-enter {
