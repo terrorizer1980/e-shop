@@ -16,6 +16,10 @@ const Jumbo = () => {
           <h4 className='jumbo-h4 '>
             Find the best personal transport devices on the Web!
           </h4>
+          <span className='line'></span>
+          <a href='#' className='enter-btn'>
+            ENTER The SHOP
+          </a>
         </div>
       </Jumbotron>
     </>

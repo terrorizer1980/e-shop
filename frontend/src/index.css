@@ -5,10 +5,16 @@
     basic = Roboto
 */
 
+body {
+  box-sizing: border-box;
+}
+
 main {
   min-height: 80vh;
 }
-
+a {
+  text-decoration: none;
+}
 h3 {
   padding: 1rem 0;
 }
@@ -78,6 +84,24 @@ p {
   background-size: cover;
 }
 
+.enter-btn {
+  font-size: 20px;
+  font-style: normal;
+  letter-spacing: 1.62px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.enter-btn:hover {
+  color: #ffffff;
+}
+.enter-btn a:hover {
+  outline: 0;
+  outline-color: currentColor;
+  outline-style: none;
+  outline-width: 0px;
+}
 .jumbo-h1 {
   font-size: 6vw;
 }
