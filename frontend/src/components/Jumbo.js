@@ -13,8 +13,8 @@ const Jumbo = () => {
             Find the best personal transport devices on the Web!
           </h4>
           <div className='line'></div>
-          <a href='#' className='enter-btn btn-i--white'>
-            ENTER The SHOP
+          <a href='#' className='enter-shop link-enter'>
+            ENTER THE SHOP
           </a>
         </div>
       </Jumbotron>
