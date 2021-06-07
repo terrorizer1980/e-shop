@@ -1,12 +1,8 @@
 import React from 'react';
-import Header from '../components/header/Header';
+import Store from '../components/store/store';
 
 const ShopListScreen = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <Store />;
 };
 
 export default ShopListScreen;

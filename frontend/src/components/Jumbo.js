@@ -1,5 +1,7 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import { LinkContainer } from 'react-router-bootstrap';
+
 const Jumbo = () => {
   return (
     <>
@@ -12,9 +14,12 @@ const Jumbo = () => {
             Find the best personal transport devices on the Web!
           </h4>
           <div className='line'></div>
-          <a href='#' className='enter-shop link-enter'>
-            ENTER THE SHOP
-          </a>
+
+          <LinkContainer to='/store'>
+            <a href='#' className='enter-shop link-enter'>
+              ENTER THE SHOP
+            </a>
+          </LinkContainer>
         </div>
       </Jumbotron>
     </>
