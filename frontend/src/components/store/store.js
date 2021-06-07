@@ -3,6 +3,7 @@ import './store.css';
 
 const videoSource =
   'https://ia601401.us.archive.org/12/items/bgvideo_202106/bgvideo.mp4';
+// https://tocrqq.ch.files.1drv.com/y4m6wLjS5IaYqF33d27ksmat6Vx91etLVYO-Fz-7tsKGbMNlm9KFAL3KdIWez4fzm9L5yO7DTG2skPX3h5fQONWCVI5fnaen8vfsLthXjBl6rwUcfMVq53zEgl9B0jBPKvz9jX4gzkJcB-KYZYfB180RYA88R7Vqaar3yFQWlXRaQpBPsXo5KddhiUJKRHzrvbP5w5-DGeOn4W8Y7ZzVldB2sjNRSIjQeaoEdewR7xQGJA/bgvideo.mp4
 const store = () => {
   return (
     <div className='container'>
