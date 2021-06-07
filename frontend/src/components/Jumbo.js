@@ -8,14 +8,13 @@ const videoSource =
 const Jumbo = () => {
   return (
     <>
-      <Jumbotron className='jumbo-bg d-flex justify-content-center align-items-center '>
+      <div className='jumbo-bg d-flex justify-content-center align-items-center '>
         <video
           className='myVideo '
           playsinline
           autoPlay='autoplay'
           loop='loop'
-          // fullscreen
-          muted
+          fullscreen
           id='my-video-id'
         >
           <source src={videoSource} type='video/mp4' />
@@ -36,7 +35,7 @@ const Jumbo = () => {
             </a>
           </LinkContainer>
         </div>
-      </Jumbotron>
+      </div>
     </>
   );
 };

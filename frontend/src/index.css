@@ -72,28 +72,18 @@ p {
 
 .jumbo-bg {
   background-color: transparent;
-
-  /* put bg im behide the nav */
   font-family: 'Noto Serof TC', sans-serif;
-
-  margin-top: -10em;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .myVideo {
-  display: inline-block;
-  box-sizing: border-box;
+  object-fit: cover;
   position: absolute;
   top: 0;
+  height: 100vh;
+  width: 100vw;
   left: 0;
-  /* min-height: 50%; */
-  /* min-width: 20%; */
-  height: auto;
-  width: 100%;
   z-index: 1;
 }
+
 .jumbo-text {
   display: flex;
   flex-direction: column;
