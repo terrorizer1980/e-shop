@@ -14,7 +14,7 @@ const Jumbo = () => {
           playsinline
           autoPlay='autoplay'
           loop='loop'
-          fullscreen
+          // fullscreen
           muted
           id='my-video-id'
         >
