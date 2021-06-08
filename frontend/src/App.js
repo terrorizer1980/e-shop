@@ -7,7 +7,7 @@ import Header from './components/header/Header';
 import Footer from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
-import ShopListScreen from './screens/ShopListScreen';
+import ShopListScreen from './components/store/store';
 import CartScreen from './screens/CartScreen';
 import SupportScreen from './screens/SupportScreen';
 import LoginScreen from './screens/LoginScreen';
@@ -60,6 +60,18 @@ function App() {
           <Route
             path='/search/:keyword/page/:pageNumber'
             component={HomeScreen}
+            exact
+          />
+          {/* store for params and keyword */}
+          <Route
+            path='/store/search/:keyword'
+            component={ShopListScreen}
+            exact
+          />
+          <Route path='/store/page/:pageNumber' component={ShopListScreen} />
+          <Route
+            path='/store/search/:keyword/page/:pageNumber'
+            component={ShopListScreen}
             exact
           />
         </Container>
