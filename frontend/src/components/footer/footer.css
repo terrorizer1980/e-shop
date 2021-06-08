@@ -1,0 +1,40 @@
+footer {
+  background: #000000;
+}
+footer .main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  max-width: 1400px;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-footer {
+  padding: 0 15px;
+  width: 92%;
+  min-width: 690px;
+}
+
+.main-footer .footer-contact {
+  margin-left: auto;
+  font-family: 'News Gothic No 2', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8f8f8f;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-social {
+  margin-left: 125px;
+}
+
+.footer-copyright {
+  width: 100%;
+  margin-top: 35px;
+  font-size: 14px;
+}

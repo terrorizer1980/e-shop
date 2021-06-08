@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
 import Header from './components/header/Header';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import ShopListScreen from './components/store/store';
@@ -55,13 +55,13 @@ function App() {
           />
           <Route path='/admin/product/:id/edit' component={ProductEditScreen} />
           <Route path='/admin/orderlist' component={OrderListScreen} />
-          <Route path='/search/:keyword' component={HomeScreen} exact />
+          {/* <Route path='/search/:keyword' component={HomeScreen} exact />
           <Route path='/page/:pageNumber' component={HomeScreen} />
           <Route
             path='/search/:keyword/page/:pageNumber'
             component={HomeScreen}
             exact
-          />
+          /> */}
           {/* store for params and keyword */}
           <Route
             path='/store/search/:keyword'
