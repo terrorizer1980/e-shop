@@ -3,7 +3,8 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const videoSource =
-  'https://ia601507.us.archive.org/32/items/video1_20210608/video1.mp4';
+  'https://ia601402.us.archive.org/35/items/bgvideo_20210608_0132/bgvideo.mp4';
+// 'https://ia601507.us.archive.org/32/items/video1_20210608/video1.mp4';
 
 const Jumbo = () => {
   return (
