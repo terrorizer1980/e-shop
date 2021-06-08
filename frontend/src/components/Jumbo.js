@@ -3,19 +3,21 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const videoSource =
-  'https://ia601401.us.archive.org/12/items/bgvideo_202106/bgvideo.mp4';
+  'https://ia601507.us.archive.org/32/items/video1_20210608/video1.mp4';
 
 const Jumbo = () => {
   return (
     <>
       <div className='jumbo-bg d-flex justify-content-center align-items-center '>
         <video
-          className='myVideo '
+          className='myVideo'
           playsinline
-          autoPlay='autoplay'
-          loop='loop'
+          autoPlay
+          loop
           fullscreen
+          muted
           id='my-video-id'
+          // preload='none'
         >
           <source src={videoSource} type='video/mp4' />
         </video>
