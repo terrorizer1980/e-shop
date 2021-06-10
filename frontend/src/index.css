@@ -182,9 +182,13 @@ a.enter-shop.link-enter {
 .info-img img {
   height: auto;
   width: auto;
-  max-height: 400px;
+  max-height: 45rem;
 }
 .info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 50%;
 }
