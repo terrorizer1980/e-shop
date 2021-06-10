@@ -30,6 +30,9 @@ const HomeScreen = ({ match }) => {
       <Meta />
       <Jumbotron />
       <div className='info-section'>
+        <div className='info-img'>
+          <img src='/images/vs.jpg' alt='' />
+        </div>
         <div className='info-text'>
           <h2 className='info-text-heading'>EV-Wheel wheels </h2>
           <p className='info-text-body'>

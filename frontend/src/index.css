@@ -173,17 +173,9 @@ a.enter-shop.link-enter {
 
 .info-section {
   overflow: hidden;
-  padding: 0 50px 90px 50px;
-  background-image: url('/images/vs.jpg');
   background-position: center;
   background-size: fill;
   box-sizing: border-box;
-  min-height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.7;
-  color: #ffffff;
 }
 .info-text {
   text-align: center;
