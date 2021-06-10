@@ -170,3 +170,16 @@ a.enter-shop.link-enter {
   text-transform: uppercase;
   margin-bottom: 40px;
 }
+
+.info-section {
+  overflow: hidden;
+  padding: 0 50px 90px 50px;
+  background-image: url('/images/vs.jpg');
+  background-size: cover;
+  box-sizing: border-box;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-text;

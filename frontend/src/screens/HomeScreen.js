@@ -29,36 +29,22 @@ const HomeScreen = ({ match }) => {
     <>
       <Meta />
       <Jumbotron />
-      {/* <Container>
-        {!keyword ? (
-          <ProductCarousel />
-        ) : (
-          <Link to='/' className='btn btn-light'>
-            Go Back
-          </Link>
-        )}
-        <h1>Latest Products</h1>
-        {loading ? (
-          <Loader />
-        ) : error ? (
-          <Message variant='danger'>{error}</Message>
-        ) : (
-          <>
-            <Row>
-              {products.map((product) => (
-                <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                  <Product product={product} />
-                </Col>
-              ))}
-            </Row>
-            <Paginate
-              pages={pages}
-              page={page}
-              keyword={keyword ? keyword : ''}
-            />
-          </>
-        )}
-      </Container> */}
+      <div className='info-section'>
+        <div className='info-text'>
+          <h2 className='info-text-heading'>EV-Wheel wheels </h2>
+          <p className='info-text-body'>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+            sapiente provident quo autem soluta facilis earum suscipit! Minima,
+            qui aspernatur!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem est
+            commodi sed optio eaque ducimus culpa, officia, cum dolores harum
+            architecto vitae tempore delectus provident labore aspernatur non!
+            Sit, culpa.
+          </p>
+        </div>
+      </div>
     </>
   );
 };
