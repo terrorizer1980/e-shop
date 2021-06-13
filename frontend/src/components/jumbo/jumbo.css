@@ -1,0 +1,100 @@
+.myVideo {
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  z-index: 1;
+}
+
+.line {
+  display: block;
+  width: 7rem;
+  height: 5px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.5;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.enter-shop {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  margin-right: 0;
+  color: white;
+
+  letter-spacing: 0.54px;
+}
+
+a.enter-shop.link-enter {
+  font-size: 20px;
+  color: white;
+}
+
+.enter-shop::before,
+.enter-shop::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 100%;
+  left: 0;
+  background: white;
+  pointer-events: none;
+
+  color: white;
+}
+.enter-shop::before {
+  content: '';
+
+  color: white;
+}
+
+.link-enter {
+  font-family: 'Roboto', sans-serif;
+}
+
+.link-enter::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+
+.link-enter:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+
+.jumbo-bg {
+  background-color: transparent;
+  font-family: 'Noto Serof TC', sans-serif;
+}
+
+.jumbo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding-top: 20em;
+  padding-bottom: 32em;
+}
+.jumbo-h1 {
+  font-size: 5vw;
+}
+.jumbo-h4 {
+  font-size: 1.6vw;
+}
+
+.jumbo-h1,
+.jumbo-h4 {
+  text-shadow: 0 2px 8px rgba(54, 9, 9, 0.4);
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.54px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}

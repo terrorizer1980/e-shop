@@ -1,0 +1,36 @@
+.info-section {
+  display: flex;
+  overflow: hidden;
+  min-height: 50vh;
+  box-sizing: border-box;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  height: 50vh;
+  padding: 0 10vw 0 10vw;
+}
+
+.info-img {
+  border: 1px solid rgb(61, 59, 59);
+}
+
+.info-img img {
+  height: auto;
+  width: auto;
+  max-height: 45rem;
+  opacity: 0.6;
+}
+.info-text {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 5em 0 5em;
+  border: 1px solid rgb(61, 59, 59);
+}
+
+.info-text .info-text-heading {
+  color: white;
+}
