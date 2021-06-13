@@ -1,3 +1,9 @@
+/* Jumbotron */
+
+.jumbo-bg {
+  background-color: transparent;
+  font-family: 'Noto Serof TC', sans-serif;
+}
 .myVideo {
   object-fit: fill;
   position: absolute;
@@ -6,6 +12,16 @@
   width: 100vw;
   left: 0;
   z-index: 1;
+}
+
+.jumbo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding-top: 20em;
+  padding-bottom: 32em;
 }
 
 .line {
@@ -67,20 +83,6 @@ a.enter-shop.link-enter {
   transform: scale3d(1, 1, 1);
 }
 
-.jumbo-bg {
-  background-color: transparent;
-  font-family: 'Noto Serof TC', sans-serif;
-}
-
-.jumbo-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  padding-top: 20em;
-  padding-bottom: 32em;
-}
 .jumbo-h1 {
   font-size: 5vw;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import { LinkContainer } from 'react-router-bootstrap';
+import './jumbo.css';
 
 const videoSource =
   'https://ia601402.us.archive.org/35/items/bgvideo_20210608_0132/bgvideo.mp4';
