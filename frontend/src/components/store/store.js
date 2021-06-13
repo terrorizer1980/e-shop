@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, Container } from 'react-bootstrap';
 
 import './store.css';
-import ProductCarousel from '../ProductCarousel';
+import ProductCarousel from '../carousel/ProductCarousel';
 
 import Message from '../Message';
 import Loader from '../Loader';
