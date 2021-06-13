@@ -37,12 +37,6 @@ p {
   margin: 0.1rem;
 }
 
-/* Header */
-.header-container {
-  display: flex;
-  /* justify-content: space-between; */
-}
-
 /* carousel */
 .carousel-item-next,
 .carousel-item-prev,
