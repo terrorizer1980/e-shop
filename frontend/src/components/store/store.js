@@ -30,6 +30,7 @@ const Store = ({ match, history }) => {
 
   return (
     <div className='container'>
+      <SearchBox history={history} />
       {!keyword ? (
         <ProductCarousel />
       ) : (
@@ -38,7 +39,6 @@ const Store = ({ match, history }) => {
         </Link>
       )}
       <h1>Latest Products</h1>
-      <SearchBox history={history} />
 
       {loading ? (
         <Loader />

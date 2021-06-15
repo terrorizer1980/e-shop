@@ -6,7 +6,7 @@ const SearchBox = ({ history }) => {
   const submiteHandler = (e) => {
     e.preventDefault();
     if (keyword.trim()) {
-      history.push(`/store/search/${keyword}`);
+      history.push(`/search/${keyword}`);
     } else {
       history.push('/');
     }
@@ -20,9 +20,9 @@ const SearchBox = ({ history }) => {
         placeholder='Search Products...'
         className='mr-sm-1 ml-sm-5'
       ></Form.Control>
-      <Button type='submit' variant='outline-light'>
+      {/* <Button type='submit' variant='outline-light'>
         <i className='fab fa-searchengin fa-1.2x'></i>
-      </Button>
+      </Button> */}
     </Form>
   );
 };

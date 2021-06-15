@@ -63,11 +63,7 @@ function App() {
             exact
           /> */}
           {/* store for params and keyword */}
-          <Route
-            path='/store/search/:keyword'
-            component={ShopListScreen}
-            exact
-          />
+          <Route path='/search/:keyword' component={ShopListScreen} exact />
           <Route path='/store/page/:pageNumber' component={ShopListScreen} />
           <Route
             path='/store/search/:keyword/page/:pageNumber'
