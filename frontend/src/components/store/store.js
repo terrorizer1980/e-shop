@@ -11,9 +11,10 @@ import Message from '../Message';
 import Loader from '../Loader';
 import Product from '../Product';
 import Paginate from '../Paginate';
+import SearchBox from '../SearchBox';
 import { listProducts } from '../../actions/productActions';
 
-const Store = ({ match }) => {
+const Store = ({ match, history }) => {
   const keyword = match.params.keyword;
 
   const pageNumber = match.params.pageNumber || 1;
@@ -37,6 +38,8 @@ const Store = ({ match }) => {
         </Link>
       )}
       <h1>Latest Products</h1>
+      <SearchBox history={history} />
+
       {loading ? (
         <Loader />
       ) : error ? (
