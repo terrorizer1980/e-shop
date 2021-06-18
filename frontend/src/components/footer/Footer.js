@@ -34,7 +34,10 @@ const Footer = () => {
           </span>
         </div>
         <br />
-        <div className='footer-copyright'> &copy; {currentYear} EV-Wheels</div>
+        <div className='footer-copyright'>
+          {' '}
+          &copy; {currentYear} EV-Wheels. All rights reserved.
+        </div>
       </div>
     </footer>
   );
