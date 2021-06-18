@@ -1,6 +1,9 @@
 import React from 'react';
 import './footer.css';
 
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+
 const Footer = () => {
   return (
     <footer>
@@ -31,7 +34,7 @@ const Footer = () => {
           </span>
         </div>
         <br />
-        <div className='footer-copyright'>Copyright &copy; 2020 EV-Wheels</div>
+        <div className='footer-copyright'> &copy; {currentYear} EV-Wheels</div>
       </div>
     </footer>
   );

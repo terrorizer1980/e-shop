@@ -1,5 +1,6 @@
 footer {
   background: #000000;
+  color: white;
 }
 .footer-social a,
 .footer-contact a {
@@ -9,6 +10,7 @@ footer {
   font-size: 1.3em;
 }
 .footer-contact a {
+  font-size: 0.8em;
   margin-right: 2.3em;
 }
 
