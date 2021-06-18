@@ -1,10 +1,17 @@
 footer {
   background: #000000;
 }
-.footer-social a {
+.footer-social a,
+.footer-contact a {
   color: white;
+}
+.footer-social a {
   font-size: 1.3em;
 }
+.footer-contact a {
+  margin-right: 2.3em;
+}
+
 footer .main-footer {
   display: flex;
   justify-content: space-between;

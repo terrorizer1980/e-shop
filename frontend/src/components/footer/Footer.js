@@ -6,7 +6,12 @@ const Footer = () => {
     <footer>
       <div className='main-footer'>
         <div className='footer-logo'>EV-Wheels</div>
-        <div className='footer-contact'>Copyright &copy; 2020 EV-Wheels</div>
+        <div className='footer-contact'>
+          <a href='#'>Privacy Policy</a>
+          <a href='#'>FAQ</a>
+          <a href='#'>Terms & Conditions</a>
+          <a href='#'>Contact</a>
+        </div>
 
         <div className='footer-social'>
           <span>
