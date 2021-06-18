@@ -1,6 +1,10 @@
 footer {
   background: #000000;
 }
+.footer-social a {
+  color: white;
+  font-size: 1.3em;
+}
 footer .main-footer {
   display: flex;
   justify-content: space-between;
