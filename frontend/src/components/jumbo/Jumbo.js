@@ -11,10 +11,10 @@ const Jumbo = () => {
       <div className='jumbo-bg d-flex justify-content-center align-items-center '>
         <video
           className='myVideo'
-          playsinline
+          playsInline
           autoPlay
           loop
-          fullscreen
+          fullscreen='true'
           muted
           id='my-video-id'
         >

@@ -19,17 +19,17 @@ const Footer = () => {
         <div className='footer-social'>
           <span>
             <a href='https://www.facebook.com/'>
-              <i class='fab fa-facebook-f'></i>
+              <i className='fab fa-facebook-f'></i>
             </a>
           </span>{' '}
           <span>
             <a href='https://twitter.com/'>
-              <i class='fab fa-twitter-square'></i>
+              <i className='fab fa-twitter-square'></i>
             </a>
           </span>{' '}
           <span>
             <a href='https://www.instagram.com/'>
-              <i class='fab fa-instagram'></i>
+              <i className='fab fa-instagram'></i>
             </a>
           </span>
         </div>

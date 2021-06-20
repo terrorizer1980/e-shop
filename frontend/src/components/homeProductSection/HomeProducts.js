@@ -12,8 +12,10 @@ const HomeProducts = ({ match, history }) => {
 
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, product } = productDetails;
+
   useEffect(() => {
     dispatch(listProductDetails(match.params.id));
+    console.log(product);
   }, [dispatch, match]);
 
   const addToCartHandler = () => {
