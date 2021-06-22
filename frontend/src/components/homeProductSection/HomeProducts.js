@@ -6,6 +6,12 @@ import Loader from '../Loader';
 import { listProductDetails } from '../../actions/productActions';
 import './homeProduct.css';
 
+const productId = [
+  '5fc980adb71e3d05d84d9174',
+  '5fc980adb71e3d05d84d9175',
+  '5fc980adb71e3d05d84d9178',
+  '5fc980adb71e3d05d84d9171',
+];
 const HomeProducts = ({ match, history }) => {
   const dispatch = useDispatch();
   const [qty, setQty] = useState(1);
@@ -14,12 +20,12 @@ const HomeProducts = ({ match, history }) => {
   const { loading, error, product } = productDetails;
 
   useEffect(() => {
-    dispatch(listProductDetails(match.params.id));
+    dispatch(listProductDetails('5fc980adb71e3d05d84d9174'));
     console.log(product);
   }, [dispatch, match]);
 
   const addToCartHandler = () => {
-    history.push(`/cart/${match.params.id}?qty=${qty}`);
+    history.push(`/cart/}`);
   };
   return (
     <div>
