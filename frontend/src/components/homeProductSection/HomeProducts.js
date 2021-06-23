@@ -20,7 +20,7 @@ const HomeProducts = () => {
         <Loader />
       ) : (
         products
-          .filter((product, index) => index <= 3)
+          .filter((p, index) => index <= 3)
           .map((product) => (
             <div className='product-section' key={product._id}>
               <img src={product.image} alt={product.name} />
