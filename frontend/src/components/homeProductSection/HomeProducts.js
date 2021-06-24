@@ -24,8 +24,10 @@ const HomeProducts = () => {
           .map((product) => (
             <div className='product-section' key={product._id}>
               <img src={product.image} alt={product.name} />
-              <h2 className='product-name'>{product.name}</h2>
-              <h3 className='product-price'>{product.price}</h3>
+              <div className='product-text'>
+                <h2 className='product-name'>{product.name}</h2>
+                <h3 className='product-price'>{product.price}</h3>
+              </div>
             </div>
           ))
       )}
