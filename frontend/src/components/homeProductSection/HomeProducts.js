@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Loader from '../Loader';
+import Button from '../customButton/Button';
 import { listTopProducts } from '../../actions/productActions';
 
 import './homeProduct.css';
@@ -32,12 +33,19 @@ const HomeProducts = ({ history }) => {
                 <h2 className='product-name'>{product.name}</h2>
                 <hr className='product-line' />
                 <h3 className='product-price'>${product.price}</h3>
-                <button
+                {/* <button
                   onClick={() => addToCartHandler(product._id)}
                   disabled={product.countInStock === 0}
                 >
                   Add To Cart
-                </button>
+                </button> */}
+
+                <Button
+                  onClick={() => addToCartHandler(product._id)}
+                  disabled={product.countInStock === 0}
+                >
+                  ADD TO CART
+                </Button>
               </div>
             </div>
           ))
