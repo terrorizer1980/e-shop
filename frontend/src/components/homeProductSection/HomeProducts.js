@@ -30,7 +30,8 @@ const HomeProducts = ({ history }) => {
               <img src={product.image} alt={product.name} />
               <div className='product-text'>
                 <h2 className='product-name'>{product.name}</h2>
-                <h3 className='product-price'>{product.price}</h3>
+                <hr className='product-line' />
+                <h3 className='product-price'>${product.price}</h3>
                 <button
                   onClick={() => addToCartHandler(product._id)}
                   disabled={product.countInStock === 0}
