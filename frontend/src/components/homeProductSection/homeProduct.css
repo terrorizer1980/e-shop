@@ -1,17 +1,19 @@
 .product-container {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .product-section img {
-  width: 20em;
-  height: 20em;
+  width: 40em;
+  height: 30em;
   object-fit: cover;
 }
 .product-section {
   position: relative;
   text-align: center;
+  margin-top: 5em;
 }
 
 .product-text {
