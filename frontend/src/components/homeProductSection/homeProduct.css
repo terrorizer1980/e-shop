@@ -3,20 +3,24 @@
   width: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .product-section img {
   width: 40em;
   height: 30em;
-  object-fit: cover;
+  object-fit: center;
 }
 .product-section {
   position: relative;
   text-align: center;
   margin-top: 5em;
 }
-
 .product-text {
+  display: none;
+}
+.product-section:hover .product-text {
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
