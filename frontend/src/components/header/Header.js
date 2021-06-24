@@ -2,9 +2,8 @@ import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavDropdown } from 'react-bootstrap';
-
 import { logout } from '../../actions/userActions';
-
+import Button from '../customButton/Button';
 import './header.css';
 
 const Header = () => {
@@ -52,9 +51,9 @@ const Header = () => {
             </NavDropdown>
           ) : (
             <LinkContainer className='button-content' to='/login'>
-              <button className='button button-header'>
-                <span>LOGIN</span>
-              </button>
+              <Button className='button button-header'>
+                <span>LOGIN</span>{' '}
+              </Button>
             </LinkContainer>
           )}
           {userInfo && userInfo.isAdmin && (

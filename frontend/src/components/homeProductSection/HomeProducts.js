@@ -33,12 +33,6 @@ const HomeProducts = ({ history }) => {
                 <h2 className='product-name'>{product.name}</h2>
                 <hr className='product-line' />
                 <h3 className='product-price'>${product.price}</h3>
-                {/* <button
-                  onClick={() => addToCartHandler(product._id)}
-                  disabled={product.countInStock === 0}
-                >
-                  Add To Cart
-                </button> */}
 
                 <Button
                   onClick={() => addToCartHandler(product._id)}
