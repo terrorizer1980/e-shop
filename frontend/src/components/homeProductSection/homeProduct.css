@@ -18,6 +18,7 @@
 }
 .product-text {
   display: none;
+  text-transform: uppercase;
 }
 .product-section:hover .product-text {
   display: block;
@@ -25,4 +26,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.product-name,
+.product-price {
+  font-size: 20px;
+  font-style: normal;
+  letter-spacing: 1.62px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0.07em 0 gray, 0 0.07em gray, -0.07em 0 gray, 0 -0.07em gray;
 }

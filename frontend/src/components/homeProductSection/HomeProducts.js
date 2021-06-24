@@ -5,7 +5,7 @@ import { listTopProducts } from '../../actions/productActions';
 
 import './homeProduct.css';
 
-const HomeProducts = () => {
+const HomeProducts = ({ history }) => {
   const dispatch = useDispatch();
   const productTopRated = useSelector((state) => state.productTopRated);
   const { loading, error, products } = productTopRated;
@@ -13,6 +13,10 @@ const HomeProducts = () => {
   useEffect(() => {
     dispatch(listTopProducts());
   }, [dispatch]);
+
+  const addToCartHandler = (id) => {
+    history.push(`/cart/${id}?qty=${1}`);
+  };
 
   return (
     <div className='product-container'>
@@ -27,7 +31,12 @@ const HomeProducts = () => {
               <div className='product-text'>
                 <h2 className='product-name'>{product.name}</h2>
                 <h3 className='product-price'>{product.price}</h3>
-                <button>Add To Cart</button>
+                <button
+                  onClick={() => addToCartHandler(product._id)}
+                  disabled={product.countInStock === 0}
+                >
+                  Add To Cart
+                </button>
               </div>
             </div>
           ))

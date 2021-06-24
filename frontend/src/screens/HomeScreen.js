@@ -11,7 +11,7 @@ const HomeScreen = ({ match, history }) => {
       <Meta />
       <Jumbotron />
       <Info />
-      <HomeProductSection />
+      <HomeProductSection history={history} />
     </>
   );
 };
