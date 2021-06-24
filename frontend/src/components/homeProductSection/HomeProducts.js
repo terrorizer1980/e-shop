@@ -27,6 +27,7 @@ const HomeProducts = () => {
               <div className='product-text'>
                 <h2 className='product-name'>{product.name}</h2>
                 <h3 className='product-price'>{product.price}</h3>
+                <button>Add To Cart</button>
               </div>
             </div>
           ))
