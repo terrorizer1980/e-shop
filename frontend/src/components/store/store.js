@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, Container } from 'react-bootstrap';
 
 import './store.css';
-import ProductCarousel from '../carousel/ProductCarousel';
+// import ProductCarousel from '../carousel/ProductCarousel';
 
 import Message from '../Message';
 import Loader from '../Loader';
@@ -31,13 +31,13 @@ const Store = ({ match, history }) => {
   return (
     <div className='container'>
       <SearchBox history={history} />
-      {!keyword ? (
+      {/* {!keyword ? (
         <ProductCarousel />
       ) : (
         <Link to='/' className='btn btn-light'>
           Go Back
         </Link>
-      )}
+      )} */}
       <h1>Latest Products</h1>
 
       {loading ? (
