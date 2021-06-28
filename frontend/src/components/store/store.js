@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import './store.css';
 // import ProductCarousel from '../carousel/ProductCarousel';
 
 import Message from '../Message';
 import Loader from '../Loader';
-import Product from '../Product';
+import Product from '../product/Product';
 import Paginate from '../Paginate';
 import SearchBox from '../SearchBox';
 import { listProducts } from '../../actions/productActions';

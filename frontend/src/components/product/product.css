@@ -1,0 +1,11 @@
+.card {
+  height: 25em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.card img {
+  width: 18em;
+  height: 17em;
+  object-fit: cover;
+}
