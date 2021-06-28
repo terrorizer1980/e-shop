@@ -39,7 +39,6 @@ const Store = ({ match, history }) => {
         </Link>
       )} */}
       <h1>Latest Products</h1>
-
       {loading ? (
         <Loader />
       ) : error ? (
