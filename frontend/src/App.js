@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import AboutUs from './components/about-us/AboutUs';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import ShopListScreen from './components/store/store';
@@ -30,6 +31,7 @@ function App() {
       <main className='py-3'>
         <Route path='/' component={HomeScreen} exact />
         <Container>
+          <Route path='/aboutus' component={AboutUs} />
           <Route path='/order/:id' component={OrderScreen} />
           <Route path='/shipping' component={ShippingScreen} />
           <Route path='/payment' component={PaymentScreen} />
