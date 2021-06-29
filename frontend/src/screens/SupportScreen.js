@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { Row, Col, ListGroup, Card, Button, Form } from 'react-bootstrap'
-import Meta from '../components/Meta'
+import { Row, Col, ListGroup, Card, Button, Form } from 'react-bootstrap';
+import Meta from '../components/Meta';
 
 const SupportScreen = () => {
   return (
@@ -97,7 +97,7 @@ const SupportScreen = () => {
         </Row>
       </>
     </div>
-  )
-}
+  );
+};
 
-export default SupportScreen
+export default SupportScreen;
