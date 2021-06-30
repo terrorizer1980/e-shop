@@ -1,0 +1,59 @@
+.about-us-container {
+  max-width: 100%;
+  max-height: 100%;
+  /* display: flex; */
+}
+
+.about-us-header {
+  height: 20em;
+  color: black;
+
+  background-color: white;
+  border: brown 2px solid;
+}
+.text-center {
+  color: black;
+
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.about-us-text {
+  font-size: 1.876rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+/* part 2 */
+.about-us-cards {
+  height: 20em;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-us-cards .cards {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.about-us-cards h2 {
+  font-size: 1.876rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.about-us-cards p {
+  font-weight: 550;
+  line-height: 1.456;
+  font-size: 0.977rem;
+  letter-spacing: 0.03em;
+}
+
+/* part 3 */
+
+.wheel-images {
+  height: 40em;
+  border: brown 2px solid;
+}
