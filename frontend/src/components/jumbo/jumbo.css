@@ -82,7 +82,28 @@ a.enter-shop.link-enter {
   transform-origin: 0% 50%;
   transform: scale3d(1, 1, 1);
 }
+/* title reveal */
+.jumbo-h1,
+.line {
+  animation-duration: 4s;
+}
 
+.jumbo-h1,
+.line {
+  display: inline-block;
+  animation-name: text;
+}
+
+@keyframes text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* end title reveal */
 .jumbo-h1 {
   font-size: 5vw;
 }

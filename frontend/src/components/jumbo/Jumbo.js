@@ -23,7 +23,7 @@ const Jumbo = () => {
 
         <div className='jumbo-text'>
           <h1 className='jumbo-h1 text-capitalize font-weight-bold '>
-            Welcome to EV-Wheels
+            Welcome to <span className='jumboTitle'>EV-Wheels</span>
           </h1>
           <h4 className='jumbo-h4 '>
             Find the best personal transport devices on the Web!
