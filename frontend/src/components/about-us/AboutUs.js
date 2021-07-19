@@ -11,8 +11,8 @@ const AboutUs = () => {
           2016. We only offer products which we personally tested. We work
           closely with our suppliers to offer the best products to our
           customers.
+          <span className='owner'> - Bryant Wallace </span>
         </p>
-        <span className='owner'>- Bryant Wallace </span>
       </div>
 
       <div className='about-us-cards'>
@@ -49,7 +49,9 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className='wheel-images'>images</div>
+      <div className='wheel-images'>
+        <img src='/images/onewheel.jpg' alt='onewheel' />
+      </div>
     </div>
   );
 };
