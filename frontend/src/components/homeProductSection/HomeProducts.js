@@ -30,7 +30,12 @@ const HomeProducts = ({ history }) => {
             <div className='product-section' key={product._id}>
               <img src={product.image} alt={product.name} />
               <div className='product-text'>
-                <h2 className='product-name'>{product.name}</h2>
+                <h2
+                  className='product-name'
+                  onClick={() => history.push(`/product/${product._id}`)}
+                >
+                  {product.name}
+                </h2>
                 <hr className='product-line' />
                 <h3 className='product-price'>${product.price}</h3>
 
