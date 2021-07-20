@@ -41,7 +41,7 @@ const Header = () => {
 
         <div className='right-header'>
           {userInfo ? (
-            <NavDropdown title={userInfo.name} id='username'>
+            <NavDropdown title={userInfo.name.toUpperCase()} id='username'>
               <LinkContainer to='/profile'>
                 <NavDropdown.Item>Profile</NavDropdown.Item>
               </LinkContainer>
@@ -57,7 +57,7 @@ const Header = () => {
             </LinkContainer>
           )}
           {userInfo && userInfo.isAdmin && (
-            <NavDropdown title='Admin' id='adminmenu'>
+            <NavDropdown title='ADMIN' id='adminmenu'>
               <LinkContainer to='/admin/userlist'>
                 <NavDropdown.Item>Users</NavDropdown.Item>
               </LinkContainer>
