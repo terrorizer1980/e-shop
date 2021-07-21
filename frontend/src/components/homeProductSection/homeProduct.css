@@ -34,6 +34,10 @@
 .product-section:hover img {
   opacity: 0.3;
 }
+
+.product-section img:nth-child(2) {
+  color: rgba(red, red, red, 0.5);
+}
 .product-name,
 .product-price {
   font-size: 1.9em;
