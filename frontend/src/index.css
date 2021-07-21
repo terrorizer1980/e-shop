@@ -7,6 +7,9 @@
 
 body {
   box-sizing: border-box;
+  background-color: black;
+  color: white;
+  text-decoration: none;
 }
 
 main {
@@ -15,6 +18,15 @@ main {
 a {
   text-decoration: none;
 }
+.nav-link {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
 h3 {
   padding: 1rem 0;
 }
