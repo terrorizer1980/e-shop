@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import Loader from '../Loader';
 import Button from '../customButton/Button';
 import { listTopProducts } from '../../actions/productActions';
-
 import './homeProduct.css';
 
 const HomeProducts = ({ history }) => {
@@ -29,6 +28,7 @@ const HomeProducts = ({ history }) => {
           .map((product) => (
             <div className='product-section' key={product._id}>
               <img src={product.image} alt={product.name} />
+
               <div className='product-text'>
                 <h2
                   className='product-name'
