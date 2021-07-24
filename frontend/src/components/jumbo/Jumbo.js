@@ -7,7 +7,7 @@ const videoSource =
 
 const Jumbo = () => {
   return (
-    <>
+    <div className='jumbo-container'>
       <div className='jumbo-bg'>
         <video
           className='myVideo'
@@ -37,7 +37,7 @@ const Jumbo = () => {
           </LinkContainer>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

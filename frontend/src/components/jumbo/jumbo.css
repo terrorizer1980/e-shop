@@ -1,20 +1,25 @@
 /* Jumbotron */
-
+.jumbo-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
 .jumbo-bg {
-  font-family: 'Noto Serof TC', sans-serif;
-  height: 100vh;
-  margin-bottom: auto;
   display: flex;
+  font-family: 'Noto Serof TC', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin-bottom: auto;
   justify-content: center;
   align-items: center;
 }
 .myVideo {
-  object-fit: fill;
   position: absolute;
   top: 0;
-  height: 100%;
+  box-sizing: border-box;
+  object-fit: fill;
   width: 100%;
-
+  height: auto;
   z-index: 1;
 }
 
@@ -45,7 +50,6 @@
   white-space: nowrap;
   margin-right: 0;
   color: white;
-
   letter-spacing: 0.09rem;
 }
 
