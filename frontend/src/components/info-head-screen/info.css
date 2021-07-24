@@ -1,16 +1,17 @@
 .info-container {
   box-sizing: border-box;
+  background-color: black;
   width: 100%;
-  padding: 5px;
-  margin-top: 14em;
+  /* padding: 5px; */
+  /* margin-top: 1em; */
 }
 
 .info-section {
   background-color: rgb(253, 251, 251);
   display: flex;
   overflow: hidden;
-  min-height: 50vh;
-  /* margin-top: 3em; */
+  /* min-height: 50vh; */
+  /* margin-top: 1rem; */
   /* margin-bottom: 3em; */
 
   padding: 10rem 5rem 10rem 5rem;
