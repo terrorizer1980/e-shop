@@ -8,7 +8,7 @@ const videoSource =
 const Jumbo = () => {
   return (
     <>
-      <div className='jumbo-bg d-flex justify-content-center align-items-center '>
+      <div className='jumbo-bg'>
         <video
           className='myVideo'
           playsInline
@@ -22,7 +22,7 @@ const Jumbo = () => {
         </video>
 
         <div className='jumbo-text'>
-          <h1 className='jumbo-h1 text-capitalize font-weight-bold '>
+          <h1 className='jumbo-h1'>
             Welcome to <span className='jumboTitle'>EV-Wheels</span>
           </h1>
           <h4 className='jumbo-h4 '>
@@ -31,7 +31,7 @@ const Jumbo = () => {
           <div className='line'></div>
 
           <LinkContainer to='/store'>
-            <a href='#' className='enter-shop link-enter'>
+            <a href='#' className='enter-shop'>
               ENTER THE SHOP
             </a>
           </LinkContainer>

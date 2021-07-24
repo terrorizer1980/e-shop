@@ -4,6 +4,9 @@
   font-family: 'Noto Serof TC', sans-serif;
   height: 100vh;
   margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .myVideo {
   object-fit: fill;
