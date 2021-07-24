@@ -3,7 +3,7 @@ import './info.css';
 
 const Info = () => {
   return (
-    <>
+    <div className='info-container'>
       <div className='info-section'>
         <div className='info-img'>
           <img src='/images/vs.jpg' alt='' />
@@ -23,7 +23,7 @@ const Info = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

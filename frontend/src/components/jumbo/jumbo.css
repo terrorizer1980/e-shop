@@ -1,16 +1,17 @@
 /* Jumbotron */
 
 .jumbo-bg {
-  background-color: transparent;
   font-family: 'Noto Serof TC', sans-serif;
+  height: 100vh;
+  margin-bottom: auto;
 }
 .myVideo {
   object-fit: fill;
   position: absolute;
   top: 0;
-  height: 100vh;
-  width: 100vw;
-  left: 0;
+  height: 100%;
+  width: 100%;
+
   z-index: 1;
 }
 
@@ -20,18 +21,18 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
-  padding-top: 20em;
-  padding-bottom: 32em;
+  /* padding-top: 20em; */
+  /* padding-bottom: 32em; */
 }
 
 .line {
   display: block;
   width: 7rem;
-  height: 5px;
+  height: 0.4rem;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
   opacity: 0.5;
-  margin-bottom: 60px;
+  margin-bottom: 3rem;
   cursor: pointer;
 }
 
@@ -42,11 +43,11 @@
   margin-right: 0;
   color: white;
 
-  letter-spacing: 0.54px;
+  letter-spacing: 0.09rem;
 }
 
 a.enter-shop.link-enter {
-  font-size: 20px;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -120,5 +121,5 @@ a.enter-shop.link-enter {
   letter-spacing: 0.54px;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 2em;
 }
