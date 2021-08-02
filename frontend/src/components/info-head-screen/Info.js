@@ -6,21 +6,18 @@ const Info = () => {
     <div className='info-container'>
       <div className='info-section'>
         <div className='info-img'>
-          <img src='/images/vs.jpg' alt='' />
+          <img src='/images/ks-black.png' alt='' />
         </div>
         <div className='info-text'>
-          <h2 className='info-text-heading'>EV-Wheel wheels </h2>
+          <h2 className='info-text-heading'>Why EV-Wheels?</h2>
           <p className='info-text-body'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-            sapiente provident quo autem soluta facilis earum suscipit! Minima,
-            qui aspernatur!
+            Our Wheel is powerful, capable, and packed with everything you need
+            to take you to point A to B.
           </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem est
-            commodi sed optio eaque ducimus culpa, officia, cum dolores harum
-            architecto vitae tempore delectus provident labore aspernatur non!
-            Sit, culpa.
-          </p>
+          <p>Always quality. Never slow.</p>
+        </div>
+        <div className='info-img'>
+          <img src='/images/ks-white.png' alt='' />
         </div>
       </div>
     </div>

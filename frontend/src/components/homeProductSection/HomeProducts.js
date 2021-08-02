@@ -22,7 +22,7 @@ const HomeProducts = ({ history }) => {
     <div className='product-container'>
       {loading ? (
         <Loader />
-      ) : (
+      ) : products ? (
         products
           .filter((p, index) => index <= 3)
           .map((product) => (
@@ -48,6 +48,8 @@ const HomeProducts = ({ history }) => {
               </div>
             </div>
           ))
+      ) : (
+        <Loader />
       )}
     </div>
   );
