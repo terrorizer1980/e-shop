@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavDropdown } from 'react-bootstrap';
@@ -7,22 +7,16 @@ import Button from '../customButton/Button';
 import './header.css';
 
 const Header = () => {
-  const [href, setHref] = useState('/');
   const dispatch = useDispatch();
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
 
-  useEffect(() => {
-    setHref(window.location.pathname);
-  }, [window]);
   const logoutHandler = () => {
     dispatch(logout());
   };
 
   return (
-    <header
-      className={href == '/' ? `header-container` : 'other-header-container'}
-    >
+    <header className='header-container'>
       <div className='header-center'>
         <div className='left-header'>
           <LinkContainer to='/aboutus'>
