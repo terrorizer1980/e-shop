@@ -1,82 +1,85 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
-import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
-import ReactPlayer from 'react-player'
-import Rating from '../components/Rating'
-import Loader from '../components/Loader'
-import Message from '../components/Message'
-import Meta from '../components/Meta'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import Specs from '../components/porductDetails/Specs';
+import WheelVideo from '../components/porductDetails/WheelVideo';
+import {
+  Row,
+  Col,
+  Image,
+  ListGroup,
+  Card,
+  Button,
+  Form,
+} from 'react-bootstrap';
+import Rating from '../components/Rating';
+import Loader from '../components/Loader';
+import Message from '../components/Message';
+import Meta from '../components/Meta';
 import {
   listProductDetails,
   createProductReview,
-} from '../actions/productActions'
-import { PRODUCT_CREATE_REVIEW_RESET } from '../constants/productConstants'
+} from '../actions/productActions';
+import { PRODUCT_CREATE_REVIEW_RESET } from '../constants/productConstants';
 
 const ProductScreen = ({ history, match }) => {
-  const [qty, setQty] = useState(1)
-  const [rating, setRating] = useState(0)
-  const [comment, setComment] = useState('')
+  const [qty, setQty] = useState(1);
+  const [rating, setRating] = useState(0);
+  const [comment, setComment] = useState('');
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  const productDetails = useSelector((state) => state.productDetails)
-  const { loading, error, product } = productDetails
-  let [range, battery, motorPower, speed, weight] = [0, 0, 0, 0, 0]
+  const productDetails = useSelector((state) => state.productDetails);
+  const { loading, error, product } = productDetails;
+  let [range, battery, motorPower, speed, weight] = [0, 0, 0, 0, 0];
 
   if (product.specs) {
-    range = product.specs.range
-    battery = product.specs.battery
-    motorPower = product.specs.motorPower
-    speed = product.specs.speed
-    weight = product.specs.weight
+    range = product.specs.range;
+    battery = product.specs.battery;
+    motorPower = product.specs.motorPower;
+    speed = product.specs.speed;
+    weight = product.specs.weight;
   } else {
-    range = 0
-    battery = 0
-    motorPower = 0
-    speed = 0
-    weight = 0
+    range = 0;
+    battery = 0;
+    motorPower = 0;
+    speed = 0;
+    weight = 0;
   }
 
-  const userLogin = useSelector((state) => state.userLogin)
-  const { userInfo } = userLogin
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
 
-  const productReviewCreate = useSelector((state) => state.productReviewCreate)
-  const {
-    success: successProductReview,
-    error: errorProductReview,
-  } = productReviewCreate
+  const productReviewCreate = useSelector((state) => state.productReviewCreate);
+  const { success: successProductReview, error: errorProductReview } =
+    productReviewCreate;
 
   useEffect(() => {
     if (successProductReview) {
-      alert('Review Submitted!')
-      setRating(0)
-      setComment('')
-      dispatch({ type: PRODUCT_CREATE_REVIEW_RESET })
+      alert('Review Submitted!');
+      setRating(0);
+      setComment('');
+      dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
     }
-    dispatch(listProductDetails(match.params.id))
-  }, [dispatch, match, successProductReview])
+    dispatch(listProductDetails(match.params.id));
+  }, [dispatch, match, successProductReview]);
 
   const addToCartHandler = () => {
-    history.push(`/cart/${match.params.id}?qty=${qty}`)
-  }
+    history.push(`/cart/${match.params.id}?qty=${qty}`);
+  };
 
   const submitHandler = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     dispatch(
       createProductReview(match.params.id, {
         rating,
         comment,
       })
-    )
-  }
+    );
+  };
 
   return (
     <div>
-      <Link className='btn btn-light my-3' to='/'>
-        {' '}
-        Go Back
-      </Link>
       {loading ? (
         <Loader />
       ) : error ? (
@@ -163,40 +166,16 @@ const ProductScreen = ({ history, match }) => {
               </Card>
             </Col>
           </Row>
-          <Row className='my-3 textAlign-center'>
-            <Col md={2}></Col>
-            <Col md={2}>
-              <h4>Weight</h4>
-              {weight} Ibs
-            </Col>
-            <Col md={2}>
-              <h4>Speed</h4>
-              {speed} MPH
-            </Col>
-            <Col md={2}>
-              <h4>Range</h4>
-              {range} miles
-            </Col>
-            <Col md={2}>
-              <h4>Motor</h4>
-              {motorPower} W
-            </Col>
-            <Col md={2}>
-              <h4>Battery</h4>
-              {battery} Wh
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12}>
-              <h2>Video</h2>
-              <ReactPlayer
-                url={product.youtubeURL}
-                muted={false}
-                controls={true}
-                volume={0.3}
-              />
-            </Col>
-          </Row>
+          {/* Bottom three components */}
+          <Specs
+            weight={weight}
+            speed={speed}
+            range={range}
+            motorPower={motorPower}
+            battery={battery}
+          />
+          <WheelVideo youtubeURL={product.youtubeURL} />
+
           <Row>
             <Col md={12}>
               <h2>Reviews</h2>
@@ -259,7 +238,7 @@ const ProductScreen = ({ history, match }) => {
         </>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default ProductScreen
+export default ProductScreen;
