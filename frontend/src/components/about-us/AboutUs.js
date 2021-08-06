@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className='about-us-container'>
       <div className='about-us-header'>
         <div className='wheel-images'>
-          <img src='/images/onewheel.jpg' alt='onewheel' />
+          <img src='/images/jump.png' alt='onewheel' />
         </div>
         <div className='about-us-text'>
           <p>
@@ -34,11 +34,11 @@ const AboutUs = () => {
             and early 90’s.
           </p>
           <div className='leadership-image'>
-            <img src='/images/onewheel.jpg' alt='onewheel' />
+            <img src='/images/eucbw.jpg' alt='onewheel' />
           </div>
         </div>
         <div className='quality-card'>
-          <div className='leadership-image'>
+          <div className='quality-card-image'>
             <img src='/images/onewheel.jpg' alt='onewheel' />
           </div>
 
