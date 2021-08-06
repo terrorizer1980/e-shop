@@ -58,17 +58,21 @@
   background-color: rgb(242, 242, 242);
 }
 
+/*  */
+
 .leadership-card {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: 85vw;
+  display: grid;
   align-items: center;
-  justify-content: space-around;
+  grid-template-columns: 50vw 28vw;
+  grid-column-gap: 1vw;
+  padding-top: 86px;
   margin-top: 1em;
   background-color: rgb(242, 242, 242);
+  overflow: hidden;
 }
 .leadership-card p {
-  width: 50%;
+  width: 100%;
 }
 .leadership-image {
   width: 100%;
