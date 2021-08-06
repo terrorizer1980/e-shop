@@ -29,7 +29,7 @@ const Store = ({ match, history }) => {
   }, [dispatch, keyword, pageNumber]);
 
   return (
-    <div className='container'>
+    <div className='store-container'>
       <SearchBox history={history} />
       {/* {!keyword ? (
         <ProductCarousel />

@@ -1,12 +1,13 @@
-.container {
+.store-container {
   position: relative;
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-color: rgb(242, 242, 242);
-  color: black;
 }
-
+.store-container h1 {
+  color: rgb(3, 3, 3);
+}
 /* Style the video: 100% width and height to cover the entire window */
 .video {
   width: 150%;
