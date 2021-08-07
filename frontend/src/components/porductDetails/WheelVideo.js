@@ -4,7 +4,7 @@ import './wheelVideo.css';
 
 const WheelVideo = ({ youtubeURL }) => {
   return (
-    <div className='review-container'>
+    <div className='review-video-container'>
       <div className='review-video'>
         <h2>REVIEW VIDEO</h2>
         <ReactPlayer

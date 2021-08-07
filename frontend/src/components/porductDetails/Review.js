@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Row,
-  Col,
-  Image,
-  ListGroup,
-  Card,
-  Button,
-  Form,
-} from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Message from '../../components/Message';
 import Rating from '../../components/Rating';
@@ -24,21 +16,21 @@ const Review = ({
   rating,
 }) => {
   return (
-    <Row>
-      <Col md={12}>
-        <h2>Reviews</h2>
+    <div className='review-container'>
+      <h2>Reviews</h2>
+      <div className='review' md={12}>
         {product.reviews.length === 0 && <Message>No Reviews</Message>}
-        <ListGroup variant='flush'>
+        <div className='review-body'>
           {product.reviews.map((review) => (
-            <ListGroup.Item key={review._id}>
+            <div className='review-list' key={review._id}>
               <strong>{review.name}</strong>
               <Rating value={review.rating} />
 
               <p>{review.createdAt.substring(0, 10)}</p>
               <p>{review.comment}</p>
-            </ListGroup.Item>
+            </div>
           ))}
-          <ListGroup.Item>
+          <div className='write-review-container'>
             <h2>Write a Customer Review</h2>
             {errorProductReview && (
               <Message variant='danger'>{errorProductReview}</Message>
@@ -79,10 +71,10 @@ const Review = ({
                 to write a review
               </Message>
             )}
-          </ListGroup.Item>
-        </ListGroup>
-      </Col>
-    </Row>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
