@@ -1,20 +1,20 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import { Row, Col } from 'react-bootstrap';
+import './wheelVideo.css';
 
 const WheelVideo = ({ youtubeURL }) => {
   return (
-    <Row>
-      <Col md={12}>
-        <h2>Video</h2>
+    <div className='review-container'>
+      <div className='review-video'>
+        <h2>REVIEW VIDEO</h2>
         <ReactPlayer
           url={youtubeURL}
           muted={false}
           controls={true}
           volume={0.3}
         />
-      </Col>
-    </Row>
+      </div>
+    </div>
   );
 };
 

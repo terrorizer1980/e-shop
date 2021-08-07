@@ -1,0 +1,9 @@
+.review-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+.review-video h2 {
+  color: black;
+}
