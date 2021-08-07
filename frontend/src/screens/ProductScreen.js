@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Specs from '../components/porductDetails/Specs';
 import WheelVideo from '../components/porductDetails/WheelVideo';
+import Review from '../components/porductDetails/Review';
+
 import {
   Row,
   Col,
@@ -175,8 +177,17 @@ const ProductScreen = ({ history, match }) => {
             battery={battery}
           />
           <WheelVideo youtubeURL={product.youtubeURL} />
-
-          <Row>
+          <Review
+            product={product}
+            errorProductReview={errorProductReview}
+            userInfo={userInfo}
+            submitHandler={submitHandler}
+            setRating={setRating}
+            setComment={setComment}
+            comment={comment}
+            rating={rating}
+          />
+          {/* <Row>
             <Col md={12}>
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
@@ -234,7 +245,7 @@ const ProductScreen = ({ history, match }) => {
                 </ListGroup.Item>
               </ListGroup>
             </Col>
-          </Row>
+          </Row> */}
         </>
       )}
     </div>
