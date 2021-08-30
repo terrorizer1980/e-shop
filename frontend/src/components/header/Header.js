@@ -53,7 +53,7 @@ const Header = () => {
           ) : (
             <LinkContainer className='button-content' to='/login'>
               <Button className='button button-header'>
-                <span>LOGIN</span>{' '}
+                <span className='header-span'>LOGIN</span>{' '}
               </Button>
             </LinkContainer>
           )}

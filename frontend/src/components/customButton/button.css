@@ -40,7 +40,7 @@ button:focus {
 .button span {
   display: inline-block;
   position: relative;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .button::before {
