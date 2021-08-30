@@ -17,8 +17,8 @@ const Review = ({
 }) => {
   return (
     <div className='review-container'>
-      <h2>Reviews</h2>
       <div className='review' md={12}>
+        <h2>Reviews</h2>
         {product.reviews.length === 0 && <Message>No Reviews</Message>}
         <div className='review-body'>
           {product.reviews.map((review) => (
@@ -31,12 +31,12 @@ const Review = ({
             </div>
           ))}
           <div className='write-review-container'>
-            <h2>Write a Customer Review</h2>
             {errorProductReview && (
               <Message variant='danger'>{errorProductReview}</Message>
             )}
             {userInfo ? (
               <Form onSubmit={submitHandler}>
+                <h2>Write a Customer Review</h2>
                 <Form.Group controlId='rating'>
                   <Form.Label>Rating</Form.Label>
                   <Form.Control
@@ -61,7 +61,7 @@ const Review = ({
                     onChange={(e) => setComment(e.target.value)}
                   ></Form.Control>
                 </Form.Group>
-                <Button type='submite' variant='primary'>
+                <Button type='submit' variant='primary'>
                   Submit
                 </Button>
               </Form>
