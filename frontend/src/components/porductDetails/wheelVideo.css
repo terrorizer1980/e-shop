@@ -1,8 +1,19 @@
 .review-video-container {
   display: flex;
   justify-content: center;
+  /* width: auto;
+  height: auto; */
   margin: 2em;
 }
+/* 
+.react-player {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.react-player > div {
+  position: absolute;
+} */
 
 .review-video h2 {
   color: black;

@@ -51,9 +51,9 @@ p {
     margin-bottom: 1rem;
     border-radius: 25px;
   }
-  .left-header-link:nth-child(3) {
+  /* .left-header-link:nth-child(3) {
     display: none;
-  }
+  } */
   .cart-icon {
     display: block;
     /* padding-left: auto;
@@ -75,6 +75,9 @@ p {
     margin-bottom: 1rem;
     font-size: 2rem;
   }
+  .footer-social span {
+    margin-right: 1rem;
+  }
   .footer-contact {
     margin-bottom: 1rem;
   }
@@ -90,6 +93,7 @@ p {
     display: flex;
     flex-direction: column;
   }
+
   .product-container .product-section {
     width: 100%;
   }
@@ -112,5 +116,55 @@ p {
   }
   .info-text .info-text-body {
     width: 100%;
+  }
+}
+
+/* product detail */
+
+/* @media only screen and (max-width: 600px) {
+  .review-container {
+    margin: 4rem 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+} */
+
+/* About Page */
+
+@media only screen and (max-width: 600px) {
+  .about-us-text {
+    padding: 1rem;
+    background-color: white;
+  }
+  .about-us-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us-header .wheel-images {
+    margin-top: 5rem;
+
+    width: 100%;
+  }
+  .about-us-header .about-us-text {
+    width: 100%;
+  }
+  .leadership-card {
+    display: flex;
+  }
+  .leadership-card .leadership-image img {
+    height: 20rem;
+  }
+  .quality-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .quality-card-image img {
+    width: 16rem;
   }
 }
