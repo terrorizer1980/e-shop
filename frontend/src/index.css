@@ -119,22 +119,6 @@ p {
   }
 }
 
-/* product detail */
-
-/* @media only screen and (max-width: 600px) {
-  .review-container {
-    margin: 4rem 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .react-player {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-} */
-
 /* About Page */
 
 @media only screen and (max-width: 600px) {
