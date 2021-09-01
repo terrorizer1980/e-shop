@@ -23,8 +23,8 @@ git clone: https://github.com/VanVDC/e-shop.git
 
 - `npm install`
 - Create an `.env` files for server.
-- Create a mongoDB account and get the link
-- add add mongoDB url in the env file
+- Create a mongoDB account and get the url
+- add mongoDB url in the env file
 
 ```
 MONGO_URL=your-key-here
