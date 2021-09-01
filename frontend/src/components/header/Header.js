@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavDropdown } from 'react-bootstrap';
@@ -7,6 +7,7 @@ import Button from '../customButton/Button';
 import './header.css';
 
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
   const dispatch = useDispatch();
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
@@ -15,19 +16,58 @@ const Header = () => {
     dispatch(logout());
   };
 
+  const handleClick = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <header className='header-container'>
       <div className='header-center'>
-        <div className='left-header'>
-          <LinkContainer to='/aboutus'>
-            <div className='link left-header-link'> ABOUT US</div>
-          </LinkContainer>
-          <LinkContainer to='/support'>
-            <div className='link left-header-link'> SUPPORT</div>
-          </LinkContainer>
-          <LinkContainer to='/store'>
-            <div className='link left-header-link'> SHOP</div>
-          </LinkContainer>
+        <div class='menu-wrap'>
+          <input
+            type='checkbox'
+            checked={toggle ? 'checked' : ''}
+            class='toggler'
+            onClick={handleClick}
+          />
+          <div class='hamburger'>
+            <div></div>
+          </div>
+          <div className='menu'>
+            <div>
+              <div>
+                <div className='left-header'>
+                  <LinkContainer to='/aboutus'>
+                    <div
+                      className='link left-header-link'
+                      onClick={handleClick}
+                    >
+                      {' '}
+                      ABOUT US
+                    </div>
+                  </LinkContainer>
+                  <LinkContainer to='/support'>
+                    <div
+                      className='link left-header-link'
+                      onClick={handleClick}
+                    >
+                      {' '}
+                      SUPPORT
+                    </div>
+                  </LinkContainer>
+                  <LinkContainer to='/store'>
+                    <div
+                      className='link left-header-link'
+                      onClick={handleClick}
+                    >
+                      {' '}
+                      SHOP
+                    </div>
+                  </LinkContainer>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className='header-brand'>
