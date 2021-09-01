@@ -1,7 +1,7 @@
 # e-shop
 An e-commerce site selling personal ev wheels with admin management functionality.
 
-#### .V2
+#### .V2 (2021)
 Changed the look of all the screens. Removed all the bootstrap and replaced with basic CSS. 
 
 
