@@ -1,19 +1,16 @@
 .review-video-container {
+  width: 80vw;
+  height: 50vh;
   display: flex;
   justify-content: center;
-  /* width: auto;
-  height: auto; */
   margin: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* 
-.react-player {
-  padding-top: 56.25%;
-  position: relative;
+.review-video {
+  width: 100%;
+  margin-bottom: 3rem;
 }
-
-.react-player > div {
-  position: absolute;
-} */
 
 .review-video h2 {
   color: black;

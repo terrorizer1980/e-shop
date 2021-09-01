@@ -26,7 +26,6 @@ footer .main-footer {
 }
 
 .main-footer {
-  padding: 0 15px;
   width: 92%;
 }
 
@@ -35,17 +34,21 @@ footer .main-footer {
   font-family: 'News Gothic No 2', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #8f8f8f;
   display: flex;
   justify-content: space-between;
 }
 .footer-social {
-  margin-left: 125px;
+  margin-left: 6rem;
+}
+
+.footer-social span {
+  margin-right: 1rem;
 }
 
 .footer-copyright {
   width: 100%;
-  margin-top: 35px;
-  font-size: 14px;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }

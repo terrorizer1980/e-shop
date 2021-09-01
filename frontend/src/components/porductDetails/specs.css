@@ -6,6 +6,16 @@
   display: flex;
   justify-content: space-around;
   color: black;
-  border: solid 2px white;
+  border: solid 1rem white;
   padding: 0.5em 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .spec-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }

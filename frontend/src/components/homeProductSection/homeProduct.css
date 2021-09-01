@@ -2,12 +2,10 @@
   background-color: gray;
   display: flex;
 
-  /* justify-content: space-around; */
   flex-wrap: wrap;
   align-items: stretch;
   box-sizing: border-box;
   width: 100%;
-  /* padding: 5em 2em; */
 }
 
 .product-section {
@@ -19,7 +17,6 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  /* margin: 2em 1em; */
 }
 .product-section img {
   max-width: 100%;
@@ -61,14 +58,12 @@
 .product-price {
   font-size: 1.9em;
   font-style: normal;
-  letter-spacing: 1.62px;
+  letter-spacing: 0.1rem;
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -0.003em;
-  /* color: black; */
-  /* text-shadow: 0.07em 0 gray, 0 0.07em gray, -0.07em 0 gray, 0 -0.07em gray; */
 }
 
 .product-name:hover {
