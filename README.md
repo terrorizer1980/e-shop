@@ -1,6 +1,10 @@
 # e-shop
 An e-commerce site selling personal ev wheels with admin management functionality.
 
+#### .V2
+Changed the look of all the screens. Removed all the bootstrap and replaced with basic CSS. 
+
+
 - [Client side](https://github.com/VanVDC/e-shop/tree/main/frontend)
 
 #### Server with Node js
