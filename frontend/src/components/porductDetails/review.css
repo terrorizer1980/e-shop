@@ -5,8 +5,11 @@
   color: black;
   width: 80vw;
   background-color: white;
-  border: solid white 1px;
+  border: solid white 0.06rem;
   text-transform: capitalize;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1rem;
 }
 .review {
   width: 100%;
@@ -20,7 +23,7 @@
 }
 
 .review-list {
-  border: black solid 0.5px;
+  border: black solid 0.031rem;
   padding: 2rem;
   margin: 1rem 0;
 }
