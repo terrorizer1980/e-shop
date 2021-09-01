@@ -9,9 +9,9 @@ Changed the look of all the screens. Removed all the bootstrap and replaced with
 
 #### Server with Node js
 
-- Express backend fremework
+- Express framework
 - Use MongoDB for database
-- REST API for authentication, authorization, and registration
+- REST API for user, order, and products
 
 #### Instructions:
 
