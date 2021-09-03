@@ -75,14 +75,20 @@ p {
     margin-bottom: 1rem;
     font-size: 2rem;
   }
-  .footer-social span {
-    margin-right: 1rem;
+
+  .footer-social {
+    margin-right: auto;
+    margin-left: auto;
   }
   .footer-contact {
     margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
   }
   .footer-copyright {
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
