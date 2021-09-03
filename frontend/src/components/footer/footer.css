@@ -40,7 +40,7 @@ footer .main-footer {
   justify-content: space-between;
 }
 .footer-social {
-  margin-left: 6rem;
+  margin-left: auto;
 }
 
 .footer-social span {
