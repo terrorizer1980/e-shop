@@ -37,6 +37,15 @@ const Header = () => {
             <div>
               <div>
                 <div className='left-header'>
+                  <LinkContainer to='/'>
+                    <div
+                      className='link left-header-link'
+                      onClick={handleClick}
+                    >
+                      {' '}
+                      HOME
+                    </div>
+                  </LinkContainer>
                   <LinkContainer to='/aboutus'>
                     <div
                       className='link left-header-link'

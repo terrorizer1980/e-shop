@@ -28,6 +28,10 @@
 .right-header {
   display: flex;
 }
+
+.left-header .left-header-link:nth-child(1) {
+  display: none;
+}
 .cart-icon {
   width: 1.5rem;
   margin-left: 1em;
@@ -150,6 +154,9 @@
     font-size: 1.5rem;
     padding: 1rem;
     transition: color 0.4s ease;
+  }
+  .left-header .left-header-link:nth-child(1) {
+    display: block;
   }
   /* MENU STYLES */
   .menu-wrap {
