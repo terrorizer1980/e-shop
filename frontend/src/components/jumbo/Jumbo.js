@@ -31,7 +31,7 @@ const Jumbo = () => {
           <div className='line'></div>
 
           <LinkContainer to='/store'>
-            <a href='#' className='enter-shop'>
+            <a href='/store' className='enter-shop'>
               ENTER THE SHOP
             </a>
           </LinkContainer>

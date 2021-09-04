@@ -8,7 +8,7 @@ import './homeProduct.css';
 const HomeProducts = ({ history }) => {
   const dispatch = useDispatch();
   const productTopRated = useSelector((state) => state.productTopRated);
-  const { loading, error, products } = productTopRated;
+  const { loading, products } = productTopRated;
 
   useEffect(() => {
     dispatch(listTopProducts());
