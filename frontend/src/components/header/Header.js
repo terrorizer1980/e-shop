@@ -23,14 +23,14 @@ const Header = () => {
   return (
     <header className='header-container'>
       <div className='header-center'>
-        <div class='menu-wrap'>
+        <div className='menu-wrap'>
           <input
             type='checkbox'
-            checked={toggle ? 'checked' : ''}
-            class='toggler'
+            checked={toggle}
+            className='toggler'
             onClick={handleClick}
           />
-          <div class='hamburger'>
+          <div className='hamburger'>
             <div></div>
           </div>
           <div className='menu'>
